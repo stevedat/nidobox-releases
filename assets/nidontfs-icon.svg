@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="112" y1="88" x2="912" y2="936" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F1D36"/>
+      <stop offset="55%" stop-color="#0B2942"/>
+      <stop offset="100%" stop-color="#063B4C"/>
+    </linearGradient>
+    <linearGradient id="drive" x1="224" y1="260" x2="800" y2="660" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <linearGradient id="badge" x1="356" y1="720" x2="668" y2="836" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <rect x="84" y="84" width="856" height="856" rx="196" fill="url(#bg)" stroke="#38BDF8" stroke-opacity="0.28" stroke-width="8"/>
+  <rect x="224" y="276" width="576" height="392" rx="68" fill="url(#drive)"/>
+  <text x="512" y="446" text-anchor="middle" fill="#0F253E" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="118" font-weight="900" letter-spacing="2">NTFS</text>
+  <rect x="266" y="508" width="492" height="114" rx="42" fill="#1E3148"/>
+  <circle cx="340" cy="565" r="14" fill="#38BDF8"/>
+  <circle cx="392" cy="565" r="14" fill="#38BDF8" fill-opacity="0.55"/>
+  <rect x="652" y="544" width="64" height="42" rx="21" fill="#10B981"/>
+  <rect x="356" y="720" width="312" height="112" rx="56" fill="url(#badge)"/>
+  <text x="512" y="794" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="66" font-weight="800" letter-spacing="4">R / W</text>
+</svg>

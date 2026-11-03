@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/OG-Banner-1200x630.png" alt="NidoNTFS — Native NTFS Read/Write & NidoDrop LAN for macOS" width="100%" />
+</p>
+
 # NidoNTFS — Native NTFS Read/Write & NidoDrop LAN for macOS
 
 [![Latest Release](https://img.shields.io/github/v/release/stevedat/nidontfs-releases?style=flat-square&label=Latest%20Release&color=10b981)](https://github.com/stevedat/nidontfs-releases/releases/latest)
@@ -31,6 +35,24 @@ Nâng cấp lên phiên bản mới nhất:
 ```bash
 brew update && brew upgrade --cask nidontfs
 ```
+
+---
+
+## 🖥️ Giao Diện Thực Tế / Native macOS Screenshots
+
+| 1. Đọc & Ghi Ổ Cứng NTFS (`NTFS-3G` + `FUSE-T`) | 2. Trạm Truyền Tệp & Clipboard NidoDrop LAN |
+| :---: | :---: |
+| <img src="assets/screenshots/01_ntfs_drives_rw.png" width="100%" alt="NidoNTFS Drives Read/Write" /> | <img src="assets/screenshots/02_nidodrop_lan_qr.png" width="100%" alt="NidoDrop LAN QR Transfer" /> |
+| **3. Tự Động Cập Nhật (`NidoUpdater`) & Quyền Trợ Lý** | **4. Hệ Sinh Thái Nido Holdings & VieLotus** |
+| <img src="assets/screenshots/03_settings_updater_helper.png" width="100%" alt="Settings, NidoUpdater & Helper" /> | <img src="assets/screenshots/04_vielotus_ecosystem.png" width="100%" alt="VieLotus & Nido Holdings Ecosystem" /> |
+
+---
+
+## 🏛️ Kiến Trúc Kỹ Thuật / System Architecture
+
+<p align="center">
+  <img src="assets/nidontfs-architecture.svg" alt="NidoNTFS Architecture" width="100%" />
+</p>
 
 ---
 
