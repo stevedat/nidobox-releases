@@ -20,11 +20,11 @@ Các liên kết dưới đây luôn tự động trỏ tới phiên bản chín
 
 | Hệ điều hành / Platform | Kiến trúc | Bộ cài trực tiếp / Direct Download | Ghi chú |
 | :--- | :--- | :--- | :--- |
-| **macOS Universal 2 (Evergreen DMG)** | `arm64` (M1–M4) & `x86_64` (Intel) | [**NidoNTFS-mac-universal.dmg**](https://github.com/stevedat/nidontfs-releases/releases/latest/download/NidoNTFS-mac-universal.dmg) | Bộ cài kéo-thả chuẩn (`.dmg` — 15.6 MB) |
-| **macOS Apple Silicon (`arm64`)** | `arm64` (M1 / M2 / M3 / M4) | [**NidoNTFS-mac-arm64.dmg**](https://github.com/stevedat/nidontfs-releases/releases/latest/download/NidoNTFS-mac-arm64.dmg) | Evergreen alias cho Mac chip M (`.dmg` — 15.6 MB) |
-| **macOS Intel (`x86_64`)** | `x86_64` (Intel Mac) | [**NidoNTFS-mac-x64.dmg**](https://github.com/stevedat/nidontfs-releases/releases/latest/download/NidoNTFS-mac-x64.dmg) | Evergreen alias cho Mac Intel (`.dmg` — 15.6 MB) |
-| **macOS Universal 2 (Versioned DMG)** | `arm64` & `x86_64` | [**NidoNTFS-1.2.0-universal.dmg**](https://github.com/stevedat/nidontfs-releases/releases/download/v1.2.0/NidoNTFS-1.2.0-universal.dmg) | Bản đóng gói `v1.2.0` (`.dmg` — 15.6 MB) |
-| **macOS Universal 2 (Portable ZIP)** | `arm64` & `x86_64` | [**NidoNTFS-mac-universal.zip**](https://github.com/stevedat/nidontfs-releases/releases/latest/download/NidoNTFS-mac-universal.zip) | Gói nén `.app` & `NidoUpdater` (`.zip` — 14.4 MB) |
+| **macOS Universal 2 (Evergreen DMG)** | `arm64` (M1–M4) & `x86_64` (Intel) | [**NidoNTFS-mac-universal.dmg**](https://github.com/stevedat/nidontfs-releases/releases/latest/download/NidoNTFS-mac-universal.dmg) | Bộ cài kéo-thả chuẩn (`.dmg` — 15.7 MB) |
+| **macOS Apple Silicon (`arm64`)** | `arm64` (M1 / M2 / M3 / M4) | [**NidoNTFS-mac-arm64.dmg**](https://github.com/stevedat/nidontfs-releases/releases/latest/download/NidoNTFS-mac-arm64.dmg) | Evergreen alias cho Mac chip M (`.dmg` — 15.7 MB) |
+| **macOS Intel (`x86_64`)** | `x86_64` (Intel Mac) | [**NidoNTFS-mac-x64.dmg**](https://github.com/stevedat/nidontfs-releases/releases/latest/download/NidoNTFS-mac-x64.dmg) | Evergreen alias cho Mac Intel (`.dmg` — 15.7 MB) |
+| **macOS Universal 2 (Versioned DMG)** | `arm64` & `x86_64` | [**NidoNTFS-1.2.0-universal.dmg**](https://github.com/stevedat/nidontfs-releases/releases/download/v1.2.0/NidoNTFS-1.2.0-universal.dmg) | Bản đóng gói `v1.2.0` (`.dmg` — 15.7 MB) |
+| **macOS Universal 2 (Portable ZIP)** | `arm64` & `x86_64` | [**NidoNTFS-mac-universal.zip**](https://github.com/stevedat/nidontfs-releases/releases/latest/download/NidoNTFS-mac-universal.zip) | Gói nén `.app` & `NidoUpdater` (`.zip` — 14.5 MB) |
 
 ---
 
