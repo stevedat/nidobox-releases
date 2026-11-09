@@ -1,0 +1,35 @@
+name: Báo lỗi / Bug Report
+description: Báo lỗi nhận diện USB/SSD/NTFS, giải nén NidoArchive hoặc truyền tệp NidoDrop LAN
+labels: [bug]
+body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Tính năng gặp sự cố / Affected Component
+      options:
+        - Nhận diện & Đọc/Ghi ổ đĩa (NTFS / USB Flash / SD Card / SSD / HDD)
+        - Giải nén & Đóng gói tệp (NidoArchive / libarchive)
+        - Truyền tệp nội bộ (NidoDrop LAN / QR / Clipboard)
+        - Cập nhật tự động (NidoUpdater) / Khởi động cùng macOS
+        - Giao diện / Đa ngôn ngữ (UI / Localization)
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Phiên bản NidoNTFS, macOS & Loại ổ đĩa / Environment & Drive Model
+      placeholder: "VD: NidoNTFS v1.2.0 • macOS 15.3 (arm64) • USB SanDisk Ultra 64GB"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Mô tả chi tiết / What happened?
+      placeholder: "Mô tả các bước thực hiện, kết quả mong đợi và lỗi thực tế gặp phải..."
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Nhật ký chẩn đoán / Diagnostic Logs (Optional)
+      description: "Dán nội dung từ nút 'Góp ý & Báo lỗi -> Sao chép báo cáo' trong ứng dụng NidoNTFS"
