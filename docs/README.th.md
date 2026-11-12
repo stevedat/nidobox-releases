@@ -1,77 +1,57 @@
 <p align="center">
-  <img src="../assets/OG-Banner-1200x630.png" alt="NidoNTFS — Native NTFS Read/Write & NidoDrop LAN for macOS" width="100%" />
+  <img src="../assets/OG-Banner-1200x630.png" alt="NidoBox — NTFS Read/Write, NidoDrop LAN & Mac Utility Suite" width="100%" />
 </p>
 
 <p align="center">
-  [🇺🇸 English](../README.md) · [🇻🇳 Tiếng Việt](README.vi.md) · **[🇹🇭 ภาษาไทย](README.th.md)** · [🇯🇵 日本語](README.ja.md) · [🇰🇷 한국어](README.ko.md) · [🇨🇳 简体中文](README.zh.md) · [🇮🇩 Bahasa Indonesia](README.id.md) · [🇩🇪 Deutsch](README.de.md) · [🇮🇹 Italiano](README.it.md) · [🇪🇸 Español](README.es.md) · [🇵🇹 Português](README.pt.md)
+  <a href="../README.md">English</a> · <a href="README.vi.md">Tiếng Việt</a> · <a href="README.ja.md">日本語</a> · <a href="README.ko.md">한국어</a> · <a href="README.zh.md">简体中文</a> · <strong>ไทย</strong> · <a href="README.id.md">Indonesia</a> · <a href="README.de.md">Deutsch</a> · <a href="README.es.md">Español</a> · <a href="README.it.md">Italiano</a> · <a href="README.pt.md">Português</a>
 </p>
 
-# NidoNTFS — อ่าน/เขียน NTFS เนทีฟ, ตรวจสอบสุขภาพดิสก์ S.M.A.R.T., ปรับแต่ง I/O USB/SSD และ NidoDrop LAN สำหรับ macOS
+# NidoBox — อ่าน/เขียน NTFS, NidoDrop LAN และชุดยูทิลิตี้สำหรับ macOS
 
-[![Latest Release](https://img.shields.io/github/v/release/stevedat/nidontfs-releases?style=flat-square&label=Latest%20Release&color=10b981)](https://github.com/stevedat/nidontfs-releases/releases/latest)
-[![Homebrew Cask](https://img.shields.io/badge/Homebrew-stevedat%2Ftap%2Fnidontfs-FBB040?style=flat-square&logo=homebrew)](https://github.com/stevedat/homebrew-tap)
-[![Architecture](https://img.shields.io/badge/macOS-Universal_2_(arm64_%2B_x86__64)-38bdf8?style=flat-square&logo=apple)](https://github.com/stevedat/nidontfs-releases/releases/latest)
-[![Languages](https://img.shields.io/badge/Languages-11_Native_Locales-a855f7?style=flat-square)](https://github.com/stevedat/nidontfs-releases/releases/latest)
-[![Official Portal](https://img.shields.io/badge/Portal-tools.nido--holdings.com-6366f1?style=flat-square)](https://tools.nido-holdings.com)
+[![Latest Release](https://img.shields.io/github/v/release/stevedat/nidobox-releases?style=flat-square&label=Release&color=10b981)](https://github.com/stevedat/nidobox-releases/releases/latest)
+[![Homebrew](https://img.shields.io/badge/Homebrew-stevedat%2Ftap%2Fnidobox-FBB040?style=flat-square&logo=homebrew)](https://github.com/stevedat/homebrew-tap)
+[![Apple Silicon](https://img.shields.io/badge/Apple_Silicon-arm64_Full-38bdf8?style=flat-square&logo=apple)](https://github.com/stevedat/nidobox-releases/releases/latest)
+[![Intel Mac](https://img.shields.io/badge/Intel-x86__64_Core-64748b?style=flat-square&logo=apple)](https://github.com/stevedat/nidobox-releases/releases/latest)
+[![Website](https://img.shields.io/badge/Website-tools.nido--holdings.com-6366f1?style=flat-square)](https://tools.nido-holdings.com)
 
-**NidoNTFS** คือยูทิลิตี้ระบบเนทีฟ SwiftUI Universal 2 (`arm64` + `x86_64`) สำหรับ **macOS 13.0+**. รองรับการอ่าน/เขียน NTFS โดยไม่ต้องใช้ kext (`NTFS-3G` + `FUSE-T`), การตรวจสอบสุขภาพดิสก์ S.M.A.R.T., การแตกไฟล์ตรงลงดิสก์ (`NidoArchive`) และการแชร์ไฟล์ผ่าน LAN (`NidoDrop`).
+**NidoBox** *(ชื่อเดิม NidoNTFS)* แอป SwiftUI เนทีฟสำหรับ **macOS 13.0+** แยกแพ็กเกจตามสถาปัตยกรรมชิปโดยตรง
 
----
+## ดาวน์โหลด
 
-## 📦 ดาวน์โหลดโดยตรง
-
-ลิงก์ด้านล่างชี้ไปยังเวอร์ชันล่าสุดที่ผ่านการรับรองจาก Apple (`v1.2.2`):
-
-| แพลตฟอร์ม | สถาปัตยกรรม | ลิงก์ดาวน์โหลด | รูปแบบ |
+| สถาปัตยกรรม | ตัวติดตั้ง (`v1.3.0`) | ลิงก์เวอร์ชันล่าสุดเสมอ | ฟีเจอร์ในชุด |
 | :--- | :--- | :--- | :--- |
-| **macOS Universal 2 (Evergreen DMG)** | `arm64` (M1–M4) & `x86_64` (Intel) | [**NidoNTFS-mac-universal.dmg**](https://github.com/stevedat/nidontfs-releases/releases/latest/download/NidoNTFS-mac-universal.dmg) | ตัวติดตั้งมาตรฐาน `.dmg` (`16.1 MB`) |
-| **macOS Apple Silicon (`arm64`)** | `arm64` (M1 / M2 / M3 / M4) | [**NidoNTFS-mac-arm64.dmg**](https://github.com/stevedat/nidontfs-releases/releases/latest/download/NidoNTFS-mac-arm64.dmg) | สำหรับ Apple Silicon M1–M4 (`16.1 MB`) |
-| **macOS Intel (`x86_64`)** | `x86_64` (Intel Mac) | [**NidoNTFS-mac-x64.dmg**](https://github.com/stevedat/nidontfs-releases/releases/latest/download/NidoNTFS-mac-x64.dmg) | สำหรับ Intel Mac (`16.1 MB`) |
-| **macOS Universal 2 (`v1.2.2` DMG)** | `arm64` & `x86_64` | [**NidoNTFS-1.2.2-universal.dmg**](https://github.com/stevedat/nidontfs-releases/releases/download/v1.2.2/NidoNTFS-1.2.2-universal.dmg) | ตัวติดตั้งมาตรฐาน `.dmg` (`16.1 MB`) |
-| **macOS Universal 2 (Portable ZIP)** | `arm64` & `x86_64` | [**NidoNTFS-mac-universal.zip**](https://github.com/stevedat/nidontfs-releases/releases/latest/download/NidoNTFS-mac-universal.zip) | ไฟล์พกพา `.zip` (`14.9 MB`) |
+| **Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-1.3.0-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/download/v1.3.0/NidoBox-1.3.0-arm64.dmg) | [`NidoBox-mac-arm64.dmg`](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | ชุดเต็ม: NTFS R/W, NidoDrop LAN, Archive, Cleaner, Media, Capture + OCR, Snap (`9.2 MB`) |
+| **Intel (`x86_64`)** | [**NidoBox-1.3.0-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/download/v1.3.0/NidoBox-1.3.0-x64.dmg) | [`NidoBox-mac-x64.dmg`](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | รุ่นหลัก: NTFS R/W, S.M.A.R.T., NidoDrop LAN (`9.0 MB`) |
 
----
-
-## ⚡ ติดตั้งผ่าน Homebrew
+### Homebrew
 
 ```bash
-brew install --cask stevedat/tap/nidontfs
+brew install --cask stevedat/tap/nidobox
+# Upgrade: brew update && brew upgrade --cask nidobox
 ```
 
-```bash
-brew update && brew upgrade --cask nidontfs
-```
+## ความสามารถหลัก
 
----
+- **อ่าน/เขียน NTFS ไม่ใช้ Kext (`arm64` & `x86_64`):** เมาท์ใน `/Volumes` โดยไม่ต้องปิด SIP พร้อมตรวจสุขภาพ S.M.A.R.T.
+- **NidoDrop LAN (`arm64` & `x86_64`):** ส่งไฟล์และคลิปบอร์ดผ่าน Wi-Fi ด้วย QR + PIN 4 หลักลงไดรฟ์นอกได้ทันที
+- **Studio Suite (เฉพาะ `arm64`):** แตกไฟล์, ล้างดิสก์, แปลงสื่อ, แคปหน้าจอ + OCR ในเครื่อง, จัดหน้าต่าง และ Drop Shelf
+- **อัปเกรดต่อเนื่อง:** อัปเดตจาก `NidoNTFS` เดิมโดยคงสิทธิ์ระบบครบถ้วน
 
-## ✨ จุดเด่นสำคัญ
+## หน้าจอใช้งาน
 
-- **อ่าน/เขียน NTFS ความเร็วสูงและเสถียรเมื่อ Sleep/Wake:** ใช้ `MNT_NOWAIT` ป้องกันอาการค้างของ Finder เมื่อถอดสาย USB หรือพับหน้าจอ.
-- **ตรวจสอบสุขภาพดิสก์ S.M.A.R.T.:** แสดงสถานะ S.M.A.R.T., อายุการใช้งาน SSD (`%`), อุณหภูมิ (`°C`), และความเร็วพอร์ต USB (`5–10 Gbps` vs `USB 2.0`).
-- **Adaptive I/O Engine:** ปรับขนาดบัฟเฟอร์อัตโนมัติ (`4 MB` สำหรับ SSD, `2 MB` สำหรับ HDD, `512 KB` สำหรับ USB Flash / SD Card).
-- **NidoArchive & NidoDrop LAN:** แตกไฟล์ `.zip`, `.7z`, `.rar`, `.iso` ลงดิสก์โดยตรง และส่งไฟล์ข้ามอุปกรณ์ผ่าน Wi-Fi LAN ด้วย QR Code.
-
----
-
-## 🖥️ หน้าจอการใช้งานบน macOS
-
-| 1. NTFS, USB & SD Read/Write + S.M.A.R.T. Health | 2. NidoDrop LAN File & Clipboard Station |
+| NTFS Read/Write & S.M.A.R.T. | NidoDrop LAN QR Transfer |
 | :---: | :---: |
-| <img src="../assets/screenshots/01_ntfs_drives_rw.png" width="100%" alt="NidoNTFS Drives Read/Write" /> | <img src="../assets/screenshots/02_nidodrop_lan_qr.png" width="100%" alt="NidoDrop LAN QR Transfer" /> |
-| **3. NidoUpdater & 11-Language Engine** | **4. Companion Apps Ecosystem** |
-| <img src="../assets/screenshots/03_settings_updater_helper.png" width="100%" alt="Settings, NidoUpdater & Helper" /> | <img src="../assets/screenshots/04_vielotus_ecosystem.png" width="100%" alt="Nido Holdings Ecosystem" /> |
+| <img src="../assets/screenshots/01_ntfs_drives_rw.png" width="100%" alt="NidoBox NTFS Read/Write" /> | <img src="../assets/screenshots/02_nidodrop_lan_qr.png" width="100%" alt="NidoDrop LAN Transfer" /> |
+| **Auto-Updater & System Settings** | **Studio Tools & Companion Apps** |
+| <img src="../assets/screenshots/03_settings_updater_helper.png" width="100%" alt="NidoBox Settings & Updater" /> | <img src="../assets/screenshots/04_vielotus_ecosystem.png" width="100%" alt="NidoBox Studio & Ecosystem" /> |
 
----
-
-## 🏛️ สถาปัตยกรรมระบบ
+## สถาปัตยกรรม
 
 <p align="center">
-  <img src="../assets/nidontfs-architecture.svg" alt="NidoNTFS Architecture" width="100%" />
+  <img src="../assets/nidobox-architecture.svg" alt="NidoBox Architecture" width="100%" />
 </p>
 
----
-
-## 🔐 ตรวจสอบแฮช SHA-256
+## ตรวจสอบ SHA-256
 
 ```bash
 shasum -a 256 -c SHA256SUMS.txt
