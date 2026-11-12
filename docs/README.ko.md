@@ -1,77 +1,57 @@
 <p align="center">
-  <img src="../assets/OG-Banner-1200x630.png" alt="NidoNTFS — Native NTFS Read/Write & NidoDrop LAN for macOS" width="100%" />
+  <img src="../assets/OG-Banner-1200x630.png" alt="NidoBox — NTFS Read/Write, NidoDrop LAN & Mac Utility Suite" width="100%" />
 </p>
 
 <p align="center">
-  [🇺🇸 English](../README.md) · [🇻🇳 Tiếng Việt](README.vi.md) · [🇹🇭 ภาษาไทย](README.th.md) · [🇯🇵 日本語](README.ja.md) · **[🇰🇷 한국어](README.ko.md)** · [🇨🇳 简体中文](README.zh.md) · [🇮🇩 Bahasa Indonesia](README.id.md) · [🇩🇪 Deutsch](README.de.md) · [🇮🇹 Italiano](README.it.md) · [🇪🇸 Español](README.es.md) · [🇵🇹 Português](README.pt.md)
+  <a href="../README.md">English</a> · <a href="README.vi.md">Tiếng Việt</a> · <a href="README.ja.md">日本語</a> · <strong>한국어</strong> · <a href="README.zh.md">简体中文</a> · <a href="README.th.md">ไทย</a> · <a href="README.id.md">Indonesia</a> · <a href="README.de.md">Deutsch</a> · <a href="README.es.md">Español</a> · <a href="README.it.md">Italiano</a> · <a href="README.pt.md">Português</a>
 </p>
 
-# NidoNTFS — macOS용 네이티브 NTFS 읽기/쓰기, S.M.A.R.T. 디스크 건강 상태, 적응형 USB/SSD I/O 및 NidoDrop LAN
+# NidoBox — macOS 네이티브 NTFS 읽기/쓰기, NidoDrop LAN 및 유틸리티 스위트
 
-[![Latest Release](https://img.shields.io/github/v/release/stevedat/nidontfs-releases?style=flat-square&label=Latest%20Release&color=10b981)](https://github.com/stevedat/nidontfs-releases/releases/latest)
-[![Homebrew Cask](https://img.shields.io/badge/Homebrew-stevedat%2Ftap%2Fnidontfs-FBB040?style=flat-square&logo=homebrew)](https://github.com/stevedat/homebrew-tap)
-[![Architecture](https://img.shields.io/badge/macOS-Universal_2_(arm64_%2B_x86__64)-38bdf8?style=flat-square&logo=apple)](https://github.com/stevedat/nidontfs-releases/releases/latest)
-[![Languages](https://img.shields.io/badge/Languages-11_Native_Locales-a855f7?style=flat-square)](https://github.com/stevedat/nidontfs-releases/releases/latest)
-[![Official Portal](https://img.shields.io/badge/Portal-tools.nido--holdings.com-6366f1?style=flat-square)](https://tools.nido-holdings.com)
+[![Latest Release](https://img.shields.io/github/v/release/stevedat/nidobox-releases?style=flat-square&label=Release&color=10b981)](https://github.com/stevedat/nidobox-releases/releases/latest)
+[![Homebrew](https://img.shields.io/badge/Homebrew-stevedat%2Ftap%2Fnidobox-FBB040?style=flat-square&logo=homebrew)](https://github.com/stevedat/homebrew-tap)
+[![Apple Silicon](https://img.shields.io/badge/Apple_Silicon-arm64_Full-38bdf8?style=flat-square&logo=apple)](https://github.com/stevedat/nidobox-releases/releases/latest)
+[![Intel Mac](https://img.shields.io/badge/Intel-x86__64_Core-64748b?style=flat-square&logo=apple)](https://github.com/stevedat/nidobox-releases/releases/latest)
+[![Website](https://img.shields.io/badge/Website-tools.nido--holdings.com-6366f1?style=flat-square)](https://tools.nido-holdings.com)
 
-**NidoNTFS**는 **macOS 13.0+**용 네이티브 SwiftUI Universal 2 (`arm64` + `x86_64`) 유틸리티입니다. 커널 확장 없는 **NTFS 읽기/쓰기 (`NTFS-3G` + `FUSE-T`)**, 실시간 **S.M.A.R.T. 디스크 건강 진단**, **`NidoArchive`** 스트림 압축 해제 및 **`NidoDrop LAN`** 파일 전송을 제공합니다.
+**NidoBox** *(구 NidoNTFS)* 는 **macOS 13.0+** 용 네이티브 SwiftUI 앱으로, 아키텍처별 전용 단일 빌드로 제공됩니다.
 
----
+## 다운로드
 
-## 📦 직접 다운로드
-
-Apple 공증이 완료된 최신 버전 (`v1.2.2`) 다운로드 링크:
-
-| 플랫폼 | 아키텍처 | 설치 파일 | 비고 |
+| Mac 아키텍처 | 설치 파일 (`v1.3.0`) | 항상 최신 링크 | 포함 기능 |
 | :--- | :--- | :--- | :--- |
-| **macOS Universal 2 (Evergreen DMG)** | `arm64` (M1–M4) & `x86_64` (Intel) | [**NidoNTFS-mac-universal.dmg**](https://github.com/stevedat/nidontfs-releases/releases/latest/download/NidoNTFS-mac-universal.dmg) | 표준 `.dmg` 설치 프로그램 (`16.1 MB`) |
-| **macOS Apple Silicon (`arm64`)** | `arm64` (M1 / M2 / M3 / M4) | [**NidoNTFS-mac-arm64.dmg**](https://github.com/stevedat/nidontfs-releases/releases/latest/download/NidoNTFS-mac-arm64.dmg) | Apple Silicon M1–M4 전용 (`16.1 MB`) |
-| **macOS Intel (`x86_64`)** | `x86_64` (Intel Mac) | [**NidoNTFS-mac-x64.dmg**](https://github.com/stevedat/nidontfs-releases/releases/latest/download/NidoNTFS-mac-x64.dmg) | Intel Mac 전용 (`16.1 MB`) |
-| **macOS Universal 2 (`v1.2.2` DMG)** | `arm64` & `x86_64` | [**NidoNTFS-1.2.2-universal.dmg**](https://github.com/stevedat/nidontfs-releases/releases/download/v1.2.2/NidoNTFS-1.2.2-universal.dmg) | 표준 `.dmg` 설치 프로그램 (`16.1 MB`) |
-| **macOS Universal 2 (Portable ZIP)** | `arm64` & `x86_64` | [**NidoNTFS-mac-universal.zip**](https://github.com/stevedat/nidontfs-releases/releases/latest/download/NidoNTFS-mac-universal.zip) | 포터블 `.zip` 아카이브 (`14.9 MB`) |
+| **Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-1.3.0-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/download/v1.3.0/NidoBox-1.3.0-arm64.dmg) | [`NidoBox-mac-arm64.dmg`](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | 전체 기능: NTFS R/W, NidoDrop LAN, 압축, 클리너, 미디어, 캡처 + OCR, 스냅 (`9.2 MB`) |
+| **Intel (`x86_64`)** | [**NidoBox-1.3.0-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/download/v1.3.0/NidoBox-1.3.0-x64.dmg) | [`NidoBox-mac-x64.dmg`](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | 코어 에디션: NTFS R/W, S.M.A.R.T., NidoDrop LAN (`9.0 MB`) |
 
----
-
-## ⚡ Homebrew로 설치 및 업데이트
+### Homebrew
 
 ```bash
-brew install --cask stevedat/tap/nidontfs
+brew install --cask stevedat/tap/nidobox
+# Upgrade: brew update && brew upgrade --cask nidobox
 ```
 
-```bash
-brew update && brew upgrade --cask nidontfs
-```
+## 핵심 기능
 
----
+- **무커널 확장 NTFS 읽기/쓰기 (`arm64` & `x86_64`):** SIP 해제 없이 `/Volumes` 마운트 및 S.M.A.R.T. 상태 확인.
+- **NidoDrop LAN (`arm64` & `x86_64`):** QR + 4자리 PIN으로 로컬 Wi-Fi 파일 및 클립보드 전송.
+- **Studio 스위트 (`arm64` 전용):** 아카이브, 디스크 클리너, 미디어 변환, 캡처 + 온디바이스 OCR, 윈도우 스냅, 드롭 셸프.
+- **자동 인플레이스 업그레이드:** 기존 `NidoNTFS` 권한을 유지한 채 `NidoBox` 로 전환.
 
-## ✨ 핵심 기능
+## 인터페이스
 
-- **안전한 NTFS 읽기/쓰기 및 잠자기/깨우기 연속성:** 비차단 `MNT_NOWAIT` 마운트 검사 및 절전 전 자동 버퍼 플러시(`sync`)로 Finder 멈춤 현상을 원천 방지합니다.
-- **실시간 S.M.A.R.T. 및 드라이브 건강 상태:** S.M.A.R.T. 상태, SSD 잔여 수명(`%`), 온도(`°C`), 총 쓰기/읽기 용량(`TBW/TBR`), USB 연결 속도(`5–10 Gbps` vs `USB 2.0` 병목 경고) 표시.
-- **적응형 I/O 엔진:** SSD(`4 MB`), HDD(`2 MB`), USB 플래시/SD 카드(`512 KB`)별 최적의 전송 블록 크기를 자동 적용하여 Finder `Error -36` 방지.
-- **NidoArchive & NidoDrop LAN:** 외장 드라이브 직접 압축 해제 및 QR 코드 기반 로컬 Wi-Fi/LAN 고속 파일·클립보드 공유.
-
----
-
-## 🖥️ macOS 인터페이스
-
-| 1. NTFS, USB & SD Read/Write + S.M.A.R.T. Health | 2. NidoDrop LAN File & Clipboard Station |
+| NTFS Read/Write & S.M.A.R.T. | NidoDrop LAN QR Transfer |
 | :---: | :---: |
-| <img src="../assets/screenshots/01_ntfs_drives_rw.png" width="100%" alt="NidoNTFS Drives Read/Write" /> | <img src="../assets/screenshots/02_nidodrop_lan_qr.png" width="100%" alt="NidoDrop LAN QR Transfer" /> |
-| **3. NidoUpdater & 11-Language Engine** | **4. Companion Apps Ecosystem** |
-| <img src="../assets/screenshots/03_settings_updater_helper.png" width="100%" alt="Settings, NidoUpdater & Helper" /> | <img src="../assets/screenshots/04_vielotus_ecosystem.png" width="100%" alt="Nido Holdings Ecosystem" /> |
+| <img src="../assets/screenshots/01_ntfs_drives_rw.png" width="100%" alt="NidoBox NTFS Read/Write" /> | <img src="../assets/screenshots/02_nidodrop_lan_qr.png" width="100%" alt="NidoDrop LAN Transfer" /> |
+| **Auto-Updater & System Settings** | **Studio Tools & Companion Apps** |
+| <img src="../assets/screenshots/03_settings_updater_helper.png" width="100%" alt="NidoBox Settings & Updater" /> | <img src="../assets/screenshots/04_vielotus_ecosystem.png" width="100%" alt="NidoBox Studio & Ecosystem" /> |
 
----
-
-## 🏛️ 시스템 아키텍처
+## 아키텍처
 
 <p align="center">
-  <img src="../assets/nidontfs-architecture.svg" alt="NidoNTFS Architecture" width="100%" />
+  <img src="../assets/nidobox-architecture.svg" alt="NidoBox Architecture" width="100%" />
 </p>
 
----
-
-## 🔐 SHA-256 무결성 검증
+## SHA-256 검증
 
 ```bash
 shasum -a 256 -c SHA256SUMS.txt
