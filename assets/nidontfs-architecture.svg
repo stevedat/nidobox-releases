@@ -1,68 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" fill="none">
   <defs>
-    <linearGradient id="bg-ntfs" x1="0" y1="0" x2="1200" y2="720" gradientUnits="userSpaceOnUse">
+    <linearGradient id="bg-nb" x1="0" y1="0" x2="1200" y2="680" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#060911"/>
       <stop offset="50%" stop-color="#0A1324"/>
       <stop offset="100%" stop-color="#070D19"/>
     </linearGradient>
-    <radialGradient id="glow-ntfs" cx="0.75" cy="0.28" r="0.6">
-      <stop offset="0%" stop-color="#10B981" stop-opacity="0.24"/>
+    <radialGradient id="glow-nb" cx="0.76" cy="0.24" r="0.6">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.22"/>
       <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="card-ntfs" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#131E32" stop-opacity="0.88"/>
-      <stop offset="100%" stop-color="#0B1220" stop-opacity="0.94"/>
+    <linearGradient id="card-nb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#131E32" stop-opacity="0.90"/>
+      <stop offset="100%" stop-color="#0B1220" stop-opacity="0.95"/>
     </linearGradient>
-    <pattern id="grid-ntfs" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    <pattern id="grid-nb" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.032" stroke-width="1"/>
     </pattern>
   </defs>
 
-  <rect width="1200" height="720" fill="url(#bg-ntfs)"/>
-  <rect width="1200" height="720" fill="url(#glow-ntfs)"/>
-  <rect width="1200" height="720" fill="url(#grid-ntfs)"/>
+  <rect width="1200" height="680" fill="url(#bg-nb)"/>
+  <rect width="1200" height="680" fill="url(#glow-nb)"/>
+  <rect width="1200" height="680" fill="url(#grid-nb)"/>
 
-  <rect x="70" y="60" width="1060" height="600" rx="20" fill="#0A0E17" stroke="#1E293B" stroke-width="1.5"/>
-  <rect x="70" y="60" width="1060" height="52" rx="20" fill="#101726"/>
-  <line x1="70" y1="112" x2="1130" y2="112" stroke="#1E293B" stroke-width="1.5"/>
+  <rect x="70" y="52" width="1060" height="576" rx="20" fill="#0A0E17" stroke="#1E293B" stroke-width="1.5"/>
+  <rect x="70" y="52" width="1060" height="50" rx="20" fill="#101726"/>
+  <line x1="70" y1="102" x2="1130" y2="102" stroke="#1E293B" stroke-width="1.5"/>
 
-  <circle cx="102" cy="86" r="6" fill="#334155"/>
-  <circle cx="122" cy="86" r="6" fill="#334155"/>
-  <circle cx="142" cy="86" r="6" fill="#10B981"/>
-  <text x="172" y="91" fill="#94A3B8" font-family="monospace" font-size="13" letter-spacing="1.5">NIDONTFS // KEXTLESS NTFS READ/WRITE &amp; NIDODROP LAN FOR MACOS</text>
-  <rect x="915" y="72" width="190" height="28" rx="14" fill="#10B981" fill-opacity="0.12" stroke="#10B981" stroke-opacity="0.4"/>
-  <circle cx="934" cy="86" r="4" fill="#10B981"/>
-  <text x="947" y="90" fill="#34D399" font-family="monospace" font-size="11" font-weight="600">UNIVERSAL 2 BINARY</text>
+  <circle cx="102" cy="77" r="6" fill="#334155"/>
+  <circle cx="122" cy="77" r="6" fill="#334155"/>
+  <circle cx="142" cy="77" r="6" fill="#10B981"/>
+  <text x="172" y="82" fill="#94A3B8" font-family="monospace" font-size="13" letter-spacing="1.4">NIDOBOX // DEDICATED ARM64 &amp; X86_64 ARCHITECTURE</text>
+  <rect x="892" y="63" width="214" height="28" rx="14" fill="#10B981" fill-opacity="0.12" stroke="#10B981" stroke-opacity="0.4"/>
+  <circle cx="910" cy="77" r="4" fill="#10B981"/>
+  <text x="922" y="81" fill="#34D399" font-family="monospace" font-size="11" font-weight="600">MACOS 13+ NATIVE SWIFTUI</text>
 
-  <text x="115" y="175" fill="#34D399" font-family="monospace" font-size="12" font-weight="600" letter-spacing="2">MACOS SYSTEM STORAGE &amp; LAN TRANSFER SUITE</text>
-  <text x="115" y="222" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="38" font-weight="700">NidoNTFS &amp; NidoDrop LAN</text>
-  <text x="115" y="258" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="16">NTFS-3G 2026.9.28 + FUSE-T 1.2.9 • Zero Kernel Extensions • Wi-Fi QR + 4-Digit PIN</text>
+  <text x="112" y="156" fill="#34D399" font-family="monospace" font-size="12" font-weight="600" letter-spacing="1.8">SINGLE-ARCH BUILDS • ZERO KERNEL EXTENSIONS</text>
+  <text x="112" y="200" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="700">NidoBox Architecture</text>
+  <text x="112" y="232" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="15">NTFS-3G + FUSE-T User-Space Storage • NidoDrop LAN • Apple Silicon Studio Suite</text>
 
-  <rect x="115" y="295" width="465" height="145" rx="14" fill="url(#card-ntfs)" stroke="#10B981" stroke-opacity="0.4" stroke-width="1.2"/>
-  <rect x="139" y="317" width="132" height="22" rx="6" fill="#10B981" fill-opacity="0.15"/>
-  <text x="150" y="332" fill="#34D399" font-family="monospace" font-size="11" font-weight="600">KEXTLESS ENGINE</text>
-  <text x="139" y="366" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">Full NTFS Read &amp; Write</text>
-  <text x="139" y="394" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13">Auto-Mounts NTFS Drives in /Volumes without Disabling SIP</text>
-  <text x="139" y="418" fill="#34D399" font-family="monospace" font-size="12">Windows Hibernation Unlock • ntfsfix &amp; ntfslabel</text>
+  <rect x="112" y="266" width="470" height="150" rx="14" fill="url(#card-nb)" stroke="#10B981" stroke-opacity="0.4" stroke-width="1.2"/>
+  <rect x="136" y="288" width="166" height="22" rx="6" fill="#10B981" fill-opacity="0.15"/>
+  <text x="147" y="303" fill="#34D399" font-family="monospace" font-size="11" font-weight="600">CORE • ARM64 &amp; X86_64</text>
+  <text x="136" y="338" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">Kextless NTFS Read &amp; Write</text>
+  <text x="136" y="366" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13">User-space mount in /Volumes without disabling SIP</text>
+  <text x="136" y="392" fill="#34D399" font-family="monospace" font-size="12">S.M.A.R.T. Health • Sleep/Wake Safe Flush • ntfsfix</text>
 
-  <rect x="605" y="295" width="480" height="145" rx="14" fill="url(#card-ntfs)" stroke="#38BDF8" stroke-opacity="0.35" stroke-width="1.2"/>
-  <rect x="629" y="317" width="130" height="22" rx="6" fill="#38BDF8" fill-opacity="0.15"/>
-  <text x="640" y="332" fill="#38BDF8" font-family="monospace" font-size="11" font-weight="600">NIDODROP LAN</text>
-  <text x="629" y="366" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">Wi-Fi QR &amp; Direct NTFS Save</text>
-  <text x="629" y="394" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13">Stream Multi-GB Files &amp; 2-Way Clipboard via 4-Digit PIN</text>
-  <text x="629" y="418" fill="#38BDF8" font-family="monospace" font-size="12">HTTP 206 Range Seeking • SSE Real-Time Sync</text>
+  <rect x="608" y="266" width="480" height="150" rx="14" fill="url(#card-nb)" stroke="#38BDF8" stroke-opacity="0.35" stroke-width="1.2"/>
+  <rect x="632" y="288" width="166" height="22" rx="6" fill="#38BDF8" fill-opacity="0.15"/>
+  <text x="643" y="303" fill="#38BDF8" font-family="monospace" font-size="11" font-weight="600">CORE • ARM64 &amp; X86_64</text>
+  <text x="632" y="338" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">NidoDrop LAN Transfer</text>
+  <text x="632" y="366" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13">Local Wi-Fi file &amp; clipboard sync via QR + 4-digit PIN</text>
+  <text x="632" y="392" fill="#38BDF8" font-family="monospace" font-size="12">Bounded Streaming • Direct External Drive Save</text>
 
-  <rect x="115" y="465" width="465" height="145" rx="14" fill="url(#card-ntfs)" stroke="#334155" stroke-width="1.2"/>
-  <rect x="139" y="487" width="128" height="22" rx="6" fill="#A855F7" fill-opacity="0.15"/>
-  <text x="150" y="502" fill="#C084FC" font-family="monospace" font-size="11" font-weight="600">AUTO-UPDATER</text>
-  <text x="139" y="536" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">NidoUpdater &amp; Homebrew Cask</text>
-  <text x="139" y="564" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13">SHA-256 &amp; Codesign Verified Atomic In-App Upgrades</text>
-  <text x="139" y="588" fill="#C084FC" font-family="monospace" font-size="12">brew install --cask stevedat/tap/nidontfs</text>
+  <rect x="112" y="438" width="470" height="150" rx="14" fill="url(#card-nb)" stroke="#A855F7" stroke-opacity="0.38" stroke-width="1.2"/>
+  <rect x="136" y="460" width="176" height="22" rx="6" fill="#A855F7" fill-opacity="0.15"/>
+  <text x="147" y="475" fill="#C084FC" font-family="monospace" font-size="11" font-weight="600">APPLE SILICON • ARM64</text>
+  <text x="136" y="510" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">NidoBox Studio Suite</text>
+  <text x="136" y="538" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13">Archive, Disk Cleaner, Media Converter, Capture + OCR</text>
+  <text x="136" y="564" fill="#C084FC" font-family="monospace" font-size="12">Window Snap • Floating Drop Shelf • Clipboard History</text>
 
-  <rect x="605" y="465" width="480" height="145" rx="14" fill="url(#card-ntfs)" stroke="#334155" stroke-width="1.2"/>
-  <rect x="629" y="487" width="142" height="22" rx="6" fill="#F59E0B" fill-opacity="0.15"/>
-  <text x="640" y="502" fill="#FBBF24" font-family="monospace" font-size="11" font-weight="600">UNIVERSAL 2 NATIVE</text>
-  <text x="629" y="536" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">Apple Silicon (M1–M4) &amp; Intel</text>
-  <text x="629" y="564" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13">Bilingual VI/EN SwiftUI • Menu Bar Agent • Clean Uninstaller</text>
-  <text x="629" y="588" fill="#FBBF24" font-family="monospace" font-size="12">APFS / ExFAT / FAT32 / NTFS External Drive Control</text>
+  <rect x="608" y="438" width="480" height="150" rx="14" fill="url(#card-nb)" stroke="#334155" stroke-width="1.2"/>
+  <rect x="632" y="460" width="164" height="22" rx="6" fill="#F59E0B" fill-opacity="0.15"/>
+  <text x="643" y="475" fill="#FBBF24" font-family="monospace" font-size="11" font-weight="600">VERIFIED DISTRIBUTION</text>
+  <text x="632" y="510" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">Auto-Update &amp; Homebrew</text>
+  <text x="632" y="538" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13">SHA-256 + Developer ID verified in-place upgrades</text>
+  <text x="632" y="564" fill="#FBBF24" font-family="monospace" font-size="12">brew install --cask stevedat/tap/nidobox</text>
 </svg>
