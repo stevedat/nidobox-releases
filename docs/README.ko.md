@@ -18,10 +18,10 @@
 
 ## 다운로드
 
-| Mac 아키텍처 | 설치 파일 (`v1.3.0`) | 항상 최신 링크 | 포함 기능 |
-| :--- | :--- | :--- | :--- |
-| **Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-1.3.0-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/download/v1.3.0/NidoBox-1.3.0-arm64.dmg) | [`NidoBox-mac-arm64.dmg`](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | 전체 기능: NTFS R/W, NidoDrop LAN, 압축, 클리너, 미디어, 캡처 + OCR, 스냅 (`9.2 MB`) |
-| **Intel (`x86_64`)** | [**NidoBox-1.3.0-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/download/v1.3.0/NidoBox-1.3.0-x64.dmg) | [`NidoBox-mac-x64.dmg`](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | 코어 에디션: NTFS R/W, S.M.A.R.T., NidoDrop LAN (`9.0 MB`) |
+| Mac 아키텍처 | 설치 파일 (`v1.3.0`) | 포함 기능 |
+| :--- | :--- | :--- |
+| **Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | 전체 기능: NTFS R/W, NidoDrop LAN, 압축, 클리너, 미디어, 캡처 + OCR, 스냅 (`9.2 MB`) |
+| **Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | 코어 에디션: NTFS R/W, S.M.A.R.T., NidoDrop LAN (`9.0 MB`) |
 
 ### Homebrew
 
