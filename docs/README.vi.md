@@ -18,10 +18,10 @@
 
 ## Tải Bộ Cài
 
-| Kiến trúc máy | Bộ cài (`v1.3.0`) | Link luôn mới nhất | Tính năng bao gồm |
-| :--- | :--- | :--- | :--- |
-| **Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-1.3.0-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/download/v1.3.0/NidoBox-1.3.0-arm64.dmg) | [`NidoBox-mac-arm64.dmg`](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Bản đầy đủ: NTFS R/W, NidoDrop LAN, Giải nén, Dọn đĩa, Media, Chụp + OCR, Cửa sổ, Khay tạm (`9.2 MB`) |
-| **Intel (`x86_64`)** | [**NidoBox-1.3.0-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/download/v1.3.0/NidoBox-1.3.0-x64.dmg) | [`NidoBox-mac-x64.dmg`](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Bản cốt lõi: NTFS R/W, S.M.A.R.T., NidoDrop LAN (`9.0 MB`) |
+| Kiến trúc máy | Bộ cài (`v1.3.0`) | Tính năng bao gồm |
+| :--- | :--- | :--- |
+| **Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Bản đầy đủ: NTFS R/W, NidoDrop LAN, Giải nén, Dọn đĩa, Media, Chụp + OCR, Cửa sổ, Khay tạm (`9.2 MB`) |
+| **Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Bản cốt lõi: NTFS R/W, S.M.A.R.T., NidoDrop LAN (`9.0 MB`) |
 
 ### Cài Qua Homebrew
 
