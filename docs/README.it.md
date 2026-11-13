@@ -18,10 +18,10 @@
 
 ## Download
 
-| Architettura Mac | Installer (`v1.3.0`) | Link Sempre Aggiornato | Funzionalità |
-| :--- | :--- | :--- | :--- |
-| **Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-1.3.0-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/download/v1.3.0/NidoBox-1.3.0-arm64.dmg) | [`NidoBox-mac-arm64.dmg`](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Suite Completa: NTFS L/S, NidoDrop LAN, Archivi, Cleaner, Media, Capture + OCR, Snap (`9.2 MB`) |
-| **Intel (`x86_64`)** | [**NidoBox-1.3.0-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/download/v1.3.0/NidoBox-1.3.0-x64.dmg) | [`NidoBox-mac-x64.dmg`](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Edizione Core: NTFS L/S, S.M.A.R.T., NidoDrop LAN (`9.0 MB`) |
+| Architettura Mac | Installer (`v1.3.0`) | Funzionalità |
+| :--- | :--- | :--- |
+| **Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Suite Completa: NTFS L/S, NidoDrop LAN, Archivi, Cleaner, Media, Capture + OCR, Snap (`9.2 MB`) |
+| **Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Edizione Core: NTFS L/S, S.M.A.R.T., NidoDrop LAN (`9.0 MB`) |
 
 ### Homebrew
 
