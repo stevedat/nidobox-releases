@@ -18,10 +18,10 @@
 
 ## ดาวน์โหลด
 
-| สถาปัตยกรรม | ตัวติดตั้ง (`v1.3.0`) | ลิงก์เวอร์ชันล่าสุดเสมอ | ฟีเจอร์ในชุด |
-| :--- | :--- | :--- | :--- |
-| **Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-1.3.0-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/download/v1.3.0/NidoBox-1.3.0-arm64.dmg) | [`NidoBox-mac-arm64.dmg`](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | ชุดเต็ม: NTFS R/W, NidoDrop LAN, Archive, Cleaner, Media, Capture + OCR, Snap (`9.2 MB`) |
-| **Intel (`x86_64`)** | [**NidoBox-1.3.0-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/download/v1.3.0/NidoBox-1.3.0-x64.dmg) | [`NidoBox-mac-x64.dmg`](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | รุ่นหลัก: NTFS R/W, S.M.A.R.T., NidoDrop LAN (`9.0 MB`) |
+| สถาปัตยกรรม | ตัวติดตั้ง (`v1.3.0`) | ฟีเจอร์ในชุด |
+| :--- | :--- | :--- |
+| **Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | ชุดเต็ม: NTFS R/W, NidoDrop LAN, Archive, Cleaner, Media, Capture + OCR, Snap (`9.2 MB`) |
+| **Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | รุ่นหลัก: NTFS R/W, S.M.A.R.T., NidoDrop LAN (`9.0 MB`) |
 
 ### Homebrew
 
