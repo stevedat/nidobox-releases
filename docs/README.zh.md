@@ -18,10 +18,10 @@
 
 ## 下载安装包
 
-| Mac 架构 | 当前版本 (`v1.3.0`) | 永久最新链接 | 包含功能 |
-| :--- | :--- | :--- | :--- |
-| **Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-1.3.0-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/download/v1.3.0/NidoBox-1.3.0-arm64.dmg) | [`NidoBox-mac-arm64.dmg`](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | 完整套件：NTFS 读写、NidoDrop、解压、清理、媒体转换、截图 + OCR、分屏 (`9.2 MB`) |
-| **Intel (`x86_64`)** | [**NidoBox-1.3.0-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/download/v1.3.0/NidoBox-1.3.0-x64.dmg) | [`NidoBox-mac-x64.dmg`](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | 核心版：NTFS 读写、S.M.A.R.T. 检测、NidoDrop 局域网传输 (`9.0 MB`) |
+| Mac 架构 | 当前版本 (`v1.3.0`) | 包含功能 |
+| :--- | :--- | :--- |
+| **Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | 完整套件：NTFS 读写、NidoDrop、解压、清理、媒体转换、截图 + OCR、分屏 (`9.2 MB`) |
+| **Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | 核心版：NTFS 读写、S.M.A.R.T. 检测、NidoDrop 局域网传输 (`9.0 MB`) |
 
 ### Homebrew 安装
 
