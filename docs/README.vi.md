@@ -18,9 +18,9 @@
 
 ## Tải Bộ Cài
 
-| Kiến trúc máy | Bộ cài (`v1.3.0`) | Tính năng bao gồm |
+| Kiến trúc máy | Bộ cài (`v1.3.1`) | Tính năng bao gồm |
 | :--- | :--- | :--- |
-| **Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Bản đầy đủ: NTFS R/W, NidoDrop LAN, Giải nén, Dọn đĩa, Media, Chụp + OCR, Cửa sổ, Khay tạm (`9.2 MB`) |
+| **Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Bản đầy đủ: NTFS R/W, NidoDrop LAN, Giải nén, Dọn đĩa, Media, Chụp + OCR, Cửa sổ, Khay tạm (`9.6 MB`) |
 | **Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Bản cốt lõi: NTFS R/W, S.M.A.R.T., NidoDrop LAN (`9.0 MB`) |
 
 ### Cài Qua Homebrew
@@ -34,7 +34,7 @@ brew install --cask stevedat/tap/nidobox
 
 - **Đọc/Ghi NTFS Không Kext (`arm64` & `x86_64`):** Mount trực tiếp vào `/Volumes` qua `NTFS-3G` + `FUSE-T` không cần tắt SIP, theo dõi S.M.A.R.T. và tự `sync` trước khi ngủ.
 - **NidoDrop LAN (`arm64` & `x86_64`):** Truyền tệp và Clipboard qua Wi-Fi nội bộ bằng mã QR + PIN 4 số thẳng vào ổ cứng ngoài.
-- **Bộ Công Cụ Studio (`arm64` Apple Silicon):** Giải nén/Nén (`.zip`/`.7z`/`.rar`/`.iso`), Dọn ổ đĩa, Chuyển đổi Media, Chụp + Vision OCR, Chia cửa sổ và Khay tạm.
+- **Bộ Công Cụ Studio (`arm64` Apple Silicon):** Giải nén/Nén (`.zip`/`.7z`/`.rar`/`.iso`), Dọn ổ đĩa, Chuyển đổi Media, Chụp thông minh (Tiêu điểm, Che mờ, Ghi chú, Tự che AI, OCR theo yêu cầu), Biên tập nhanh bản ghi (cắt video, xuất MP4/GIF, giới hạn thời lượng & dung lượng), Chia cửa sổ và Khay tạm.
 - **Nâng Cấp Giữ Nguyên Quyền:** Tự động cập nhật từ `NidoNTFS` cũ sang `NidoBox`, giữ nguyên Helper và quyền macOS đã cấp.
 
 ## Giao Diện
