@@ -18,9 +18,9 @@
 
 ## Downloads
 
-| Mac-Architektur | Installer (`v1.3.0`) | Funktionsumfang |
+| Mac-Architektur | Installer (`v1.3.1`) | Funktionsumfang |
 | :--- | :--- | :--- |
-| **Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Vollversion: NTFS R/W, NidoDrop LAN, Archiv, Cleaner, Media, Capture + OCR, Snap (`9.2 MB`) |
+| **Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Vollversion: NTFS R/W, NidoDrop LAN, Archiv, Cleaner, Media, Capture + OCR, Snap (`9.6 MB`) |
 | **Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Kernversion: NTFS R/W, S.M.A.R.T., NidoDrop LAN (`9.0 MB`) |
 
 ### Homebrew
