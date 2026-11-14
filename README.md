@@ -18,9 +18,9 @@
 
 ## Downloads
 
-| Mac Architecture | Installer (`v1.3.0`) | Included Capabilities |
+| Mac Architecture | Installer (`v1.3.1`) | Included Capabilities |
 | :--- | :--- | :--- |
-| **Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Full Suite: NTFS R/W, NidoDrop LAN, Archive, Cleaner, Media, Capture + OCR, Snap, Shelf (`9.2 MB`) |
+| **Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Full Suite: NTFS R/W, NidoDrop LAN, Archive, Cleaner, Media, Capture + OCR, Snap, Shelf (`9.6 MB`) |
 | **Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Core Edition: NTFS R/W, S.M.A.R.T. Health, NidoDrop LAN (`9.0 MB`) |
 
 ### Homebrew
@@ -34,7 +34,7 @@ brew install --cask stevedat/tap/nidobox
 
 - **Kextless NTFS Read/Write (`arm64` & `x86_64`):** User-space `NTFS-3G` + `FUSE-T` mount in `/Volumes` without disabling SIP, S.M.A.R.T. health, and sleep/wake safe flush.
 - **NidoDrop LAN (`arm64` & `x86_64`):** Local Wi-Fi file and clipboard transfer via QR + 4-digit PIN directly to mounted drives.
-- **Studio Suite (`arm64` Apple Silicon):** Archive (`.zip`/`.7z`/`.rar`/`.iso`), Disk Cleaner, Batch Media Converter, Screen Capture + on-device OCR, Window Snap, and Drop Shelf.
+- **Studio Suite (`arm64` Apple Silicon):** Archive (`.zip`/`.7z`/`.rar`/`.iso`), Disk Cleaner, Batch Media Converter, Smart Screenshot Markup (Cinema Spotlight, Redact, Callouts, AI Auto-Shield, on-demand OCR), Quick Record Studio (Filmstrip Trimmer, MP4/GIF export, duration/size caps), Window Snap, and Drop Shelf.
 - **Seamless In-Place Upgrade:** Auto-updates from legacy `NidoNTFS` while preserving macOS permissions and helper setup.
 
 ## Interface
