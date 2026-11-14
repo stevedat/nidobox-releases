@@ -18,9 +18,9 @@
 
 ## ダウンロード
 
-| アーキテクチャ | インストーラ (`v1.3.0`) | 収録機能 |
+| アーキテクチャ | インストーラ (`v1.3.1`) | 収録機能 |
 | :--- | :--- | :--- |
-| **Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | フル機能: NTFS 読み書き, NidoDrop LAN, アーカイブ, クリーナー, 変換, Capture + OCR, Snap (`9.2 MB`) |
+| **Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | フル機能: NTFS 読み書き, NidoDrop LAN, アーカイブ, クリーナー, 変換, Capture + OCR, Snap (`9.6 MB`) |
 | **Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | コア版: NTFS 読み書き, S.M.A.R.T., NidoDrop LAN (`9.0 MB`) |
 
 ### Homebrew
