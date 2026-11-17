@@ -9,7 +9,6 @@
 # NidoBox — อ่าน/เขียน NTFS, NidoDrop LAN และชุดยูทิลิตี้เนทีฟ (macOS & Windows)
 
 [![Latest Release](https://img.shields.io/github/v/release/stevedat/nidobox-releases?style=flat-square&label=Release&color=10b981)](https://github.com/stevedat/nidobox-releases/releases/latest)
-[![Homebrew](https://img.shields.io/badge/Homebrew-stevedat%2Ftap%2Fnidobox-FBB040?style=flat-square&logo=homebrew)](https://github.com/stevedat/homebrew-tap)
 [![macOS arm64 & x64](https://img.shields.io/badge/macOS_13%2B-arm64_%26_x64-38bdf8?style=flat-square&logo=apple)](https://github.com/stevedat/nidobox-releases/releases/latest)
 [![Windows x64 & ARM64](https://img.shields.io/badge/Windows_10%2F11-x64_%26_ARM64-0078D4?style=flat-square&logo=windows)](https://github.com/stevedat/nidobox-releases/releases/latest)
 [![Website](https://img.shields.io/badge/Website-tools.nido--holdings.com-6366f1?style=flat-square)](https://tools.nido-holdings.com)
@@ -20,17 +19,10 @@
 
 | ระบบและสถาปัตยกรรม | ตัวติดตั้ง (`v1.4.0`) | ฟีเจอร์ในชุด |
 | :--- | :--- | :--- |
-| **macOS Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Mac ชุดเต็ม: NTFS R/W, NidoDrop LAN, Archive, Cleaner, Media, Capture + OCR, Snap (`9.7 MB`) |
-| **macOS Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Mac รุ่นหลัก: NTFS R/W, S.M.A.R.T., NidoDrop LAN (`9.0 MB`) |
+| **macOS Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Mac ชุดเต็ม: NTFS R/W, NidoDrop LAN, Archive, Cleaner, Media, Capture + OCR, Snap (`13.5 MB`) |
+| **macOS Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Mac รุ่นหลัก: NTFS R/W, S.M.A.R.T., NidoDrop LAN (`11.1 MB`) |
 | **Windows 10/11 x64 (`x86_64`)** · Intel & AMD | [**NidoBox-win-x64.exe**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-win-x64.exe) | Windows x64 เนทีฟ: Capture Studio (WebGPU + OCR), NidoDrop LAN, แปลงภาพชุด, แตกไฟล์, เริ่มอัตโนมัติ (`2.9 MB`) |
 | **Windows 11 ARM64 (`aarch64`)** · Snapdragon X | [**NidoBox-win-arm64.exe**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-win-arm64.exe) | Windows ARM64 เนทีฟ (Snapdragon X / Copilot+): ชุดเต็มสำหรับ Windows ARM64 (`2.6 MB`) |
-
-### Homebrew (macOS)
-
-```bash
-brew install --cask stevedat/tap/nidobox
-# Upgrade: brew update && brew upgrade --cask nidobox
-```
 
 ## ความสามารถหลัก
 
