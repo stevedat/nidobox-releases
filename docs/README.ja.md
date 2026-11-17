@@ -19,8 +19,8 @@
 
 | OS・アーキテクチャ | インストーラ (`v1.4.0`) | 収録機能 |
 | :--- | :--- | :--- |
-| **macOS Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Mac フル機能: NTFS 読み書き, NidoDrop LAN, アーカイブ, クリーナー, 変換, Capture + OCR, Snap (`13.5 MB`) |
-| **macOS Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Mac コア版: NTFS 読み書き, S.M.A.R.T., NidoDrop LAN (`11.1 MB`) |
+| **macOS Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Mac フル機能: NTFS 読み書き, NidoDrop LAN, アーカイブ, クリーナー, 変換, Capture + OCR, Snap (`9.7 MB`) |
+| **macOS Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Mac コア版: NTFS 読み書き, S.M.A.R.T., NidoDrop LAN (`9.0 MB`) |
 | **Windows 10/11 x64 (`x86_64`)** · Intel & AMD | [**NidoBox-win-x64.exe**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-win-x64.exe) | Windows x64 ネイティブ: Capture Studio (WebGPU + OCR), NidoDrop LAN, 一括画像変換, アーカイブ, 自動起動 (`2.9 MB`) |
 | **Windows 11 ARM64 (`aarch64`)** · Snapdragon X | [**NidoBox-win-arm64.exe**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-win-arm64.exe) | Windows ARM64 ネイティブ (Snapdragon X / Copilot+): フル Windows スイート (`2.6 MB`) |
 
