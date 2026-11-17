@@ -19,8 +19,8 @@
 
 | Plataforma e Arquitetura | Instalador (`v1.4.0`) | Recursos Incluídos |
 | :--- | :--- | :--- |
-| **macOS Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Mac Suíte Completa: NTFS L/G, NidoDrop LAN, Arquivos, Limpeza, Mídia, Captura + OCR, Snap (`13.5 MB`) |
-| **macOS Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Mac Edição Core: NTFS L/G, S.M.A.R.T., NidoDrop LAN (`11.1 MB`) |
+| **macOS Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Mac Suíte Completa: NTFS L/G, NidoDrop LAN, Arquivos, Limpeza, Mídia, Captura + OCR, Snap (`9.7 MB`) |
+| **macOS Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Mac Edição Core: NTFS L/G, S.M.A.R.T., NidoDrop LAN (`9.0 MB`) |
 | **Windows 10/11 x64 (`x86_64`)** · Intel & AMD | [**NidoBox-win-x64.exe**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-win-x64.exe) | Windows x64 Nativo: Capture Studio (WebGPU + OCR), NidoDrop LAN, Conversor em Lote, Arquivos, Inicialização Automática (`2.9 MB`) |
 | **Windows 11 ARM64 (`aarch64`)** · Snapdragon X | [**NidoBox-win-arm64.exe**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-win-arm64.exe) | Windows ARM64 Nativo (Snapdragon X / Copilot+): Suíte Windows completa sem emulação (`2.6 MB`) |
 
