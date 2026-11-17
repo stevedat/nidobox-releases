@@ -19,8 +19,8 @@
 
 | Hệ điều hành & Chip | Bộ cài (`v1.4.0`) | Tính năng bao gồm |
 | :--- | :--- | :--- |
-| **macOS Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Bản Mac đầy đủ: NTFS R/W, NidoDrop LAN, Giải nén, Dọn đĩa, Media, Chụp + OCR, Quay màn hình, Cửa sổ, Khay tạm (`13.5 MB`) |
-| **macOS Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Bản Mac cốt lõi: NTFS R/W, S.M.A.R.T., NidoDrop LAN (`11.1 MB`) |
+| **macOS Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Bản Mac đầy đủ: NTFS R/W, NidoDrop LAN, Giải nén, Dọn đĩa, Media, Chụp + OCR, Quay màn hình, Cửa sổ, Khay tạm (`9.7 MB`) |
+| **macOS Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Bản Mac cốt lõi: NTFS R/W, S.M.A.R.T., NidoDrop LAN (`9.0 MB`) |
 | **Windows 10/11 x64 (`x86_64`)** · Intel & AMD | [**NidoBox-win-x64.exe**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-win-x64.exe) | Bản Windows x64 Native: Capture Studio (WebGPU + Ghi chú cong + OCR), NidoDrop LAN, Đổi ảnh hàng loạt, Giải nén, Tự khởi động (`2.9 MB`) |
 | **Windows 11 ARM64 (`aarch64`)** · Snapdragon X | [**NidoBox-win-arm64.exe**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-win-arm64.exe) | Bản Windows ARM64 Native (Snapdragon X / Copilot+): Trọn bộ tính năng Windows nguyên bản (`2.6 MB`) |
 
