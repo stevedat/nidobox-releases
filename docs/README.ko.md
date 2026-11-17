@@ -19,8 +19,8 @@
 
 | 플랫폼 및 아키텍처 | 설치 파일 (`v1.4.0`) | 포함 기능 |
 | :--- | :--- | :--- |
-| **macOS Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Mac 전체 기능: NTFS R/W, NidoDrop LAN, 압축, 클리너, 미디어, 캡처 + OCR, 스냅 (`13.5 MB`) |
-| **macOS Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Mac 코어 에디션: NTFS R/W, S.M.A.R.T., NidoDrop LAN (`11.1 MB`) |
+| **macOS Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Mac 전체 기능: NTFS R/W, NidoDrop LAN, 압축, 클리너, 미디어, 캡처 + OCR, 스냅 (`9.7 MB`) |
+| **macOS Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Mac 코어 에디션: NTFS R/W, S.M.A.R.T., NidoDrop LAN (`9.0 MB`) |
 | **Windows 10/11 x64 (`x86_64`)** · Intel & AMD | [**NidoBox-win-x64.exe**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-win-x64.exe) | Windows x64 네이티브: Capture Studio (WebGPU + OCR), NidoDrop LAN, 일괄 이미지 변환, 압축, 자동 실행 (`2.9 MB`) |
 | **Windows 11 ARM64 (`aarch64`)** · Snapdragon X | [**NidoBox-win-arm64.exe**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-win-arm64.exe) | Windows ARM64 네이티브 (Snapdragon X / Copilot+): 전체 Windows 기능 (`2.6 MB`) |
 
