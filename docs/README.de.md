@@ -9,7 +9,6 @@
 # NidoBox — NTFS Lesen/Schreiben, NidoDrop LAN & Native Desktop-Suite (macOS & Windows)
 
 [![Latest Release](https://img.shields.io/github/v/release/stevedat/nidobox-releases?style=flat-square&label=Release&color=10b981)](https://github.com/stevedat/nidobox-releases/releases/latest)
-[![Homebrew](https://img.shields.io/badge/Homebrew-stevedat%2Ftap%2Fnidobox-FBB040?style=flat-square&logo=homebrew)](https://github.com/stevedat/homebrew-tap)
 [![macOS arm64 & x64](https://img.shields.io/badge/macOS_13%2B-arm64_%26_x64-38bdf8?style=flat-square&logo=apple)](https://github.com/stevedat/nidobox-releases/releases/latest)
 [![Windows x64 & ARM64](https://img.shields.io/badge/Windows_10%2F11-x64_%26_ARM64-0078D4?style=flat-square&logo=windows)](https://github.com/stevedat/nidobox-releases/releases/latest)
 [![Website](https://img.shields.io/badge/Website-tools.nido--holdings.com-6366f1?style=flat-square)](https://tools.nido-holdings.com)
@@ -20,17 +19,10 @@
 
 | Plattform & Architektur | Installer (`v1.4.0`) | Funktionsumfang |
 | :--- | :--- | :--- |
-| **macOS Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Mac Vollversion: NTFS R/W, NidoDrop LAN, Archiv, Cleaner, Media, Capture + OCR, Snap (`9.7 MB`) |
-| **macOS Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Mac Kernversion: NTFS R/W, S.M.A.R.T., NidoDrop LAN (`9.0 MB`) |
+| **macOS Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Mac Vollversion: NTFS R/W, NidoDrop LAN, Archiv, Cleaner, Media, Capture + OCR, Snap (`13.5 MB`) |
+| **macOS Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Mac Kernversion: NTFS R/W, S.M.A.R.T., NidoDrop LAN (`11.1 MB`) |
 | **Windows 10/11 x64 (`x86_64`)** · Intel & AMD | [**NidoBox-win-x64.exe**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-win-x64.exe) | Windows x64 Nativ: Capture Studio (WebGPU + OCR), NidoDrop LAN, Batch-Bildkonverter, Archiv, Autostart (`2.9 MB`) |
 | **Windows 11 ARM64 (`aarch64`)** · Snapdragon X | [**NidoBox-win-arm64.exe**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-win-arm64.exe) | Windows ARM64 Nativ (Snapdragon X / Copilot+): Volle Windows-Suite ohne Emulation (`2.6 MB`) |
-
-### Homebrew (macOS)
-
-```bash
-brew install --cask stevedat/tap/nidobox
-# Upgrade: brew update && brew upgrade --cask nidobox
-```
 
 ## Kernfunktionen
 
