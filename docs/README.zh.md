@@ -9,7 +9,6 @@
 # NidoBox — 原生 NTFS 读写、NidoDrop 局域网快传与桌面工具套件 (macOS & Windows)
 
 [![Latest Release](https://img.shields.io/github/v/release/stevedat/nidobox-releases?style=flat-square&label=Release&color=10b981)](https://github.com/stevedat/nidobox-releases/releases/latest)
-[![Homebrew](https://img.shields.io/badge/Homebrew-stevedat%2Ftap%2Fnidobox-FBB040?style=flat-square&logo=homebrew)](https://github.com/stevedat/homebrew-tap)
 [![macOS arm64 & x64](https://img.shields.io/badge/macOS_13%2B-arm64_%26_x64-38bdf8?style=flat-square&logo=apple)](https://github.com/stevedat/nidobox-releases/releases/latest)
 [![Windows x64 & ARM64](https://img.shields.io/badge/Windows_10%2F11-x64_%26_ARM64-0078D4?style=flat-square&logo=windows)](https://github.com/stevedat/nidobox-releases/releases/latest)
 [![Website](https://img.shields.io/badge/Website-tools.nido--holdings.com-6366f1?style=flat-square)](https://tools.nido-holdings.com)
@@ -20,17 +19,10 @@
 
 | 系统与芯片架构 | 当前版本 (`v1.4.0`) | 包含功能 |
 | :--- | :--- | :--- |
-| **macOS Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Mac 完整套件：NTFS 读写、NidoDrop、解压、清理、媒体转换、截图 + OCR、录屏、分屏 (`9.7 MB`) |
-| **macOS Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Mac 核心版：NTFS 读写、S.M.A.R.T. 检测、NidoDrop 局域网传输 (`9.0 MB`) |
+| **macOS Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Mac 完整套件：NTFS 读写、NidoDrop、解压、清理、媒体转换、截图 + OCR、录屏、分屏 (`13.5 MB`) |
+| **macOS Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Mac 核心版：NTFS 读写、S.M.A.R.T. 检测、NidoDrop 局域网传输 (`11.1 MB`) |
 | **Windows 10/11 x64 (`x86_64`)** · Intel & AMD | [**NidoBox-win-x64.exe**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-win-x64.exe) | Windows x64 原生版：Capture Studio (WebGPU + 标注 + OCR)、NidoDrop 快传、批量图像转换、归档解压、开机自启 (`2.9 MB`) |
 | **Windows 11 ARM64 (`aarch64`)** · Snapdragon X | [**NidoBox-win-arm64.exe**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-win-arm64.exe) | Windows ARM64 原生版 (Snapdragon X / Copilot+)：完整 Windows 套件，零转译损耗 (`2.6 MB`) |
-
-### Homebrew 安装 (macOS)
-
-```bash
-brew install --cask stevedat/tap/nidobox
-# Upgrade: brew update && brew upgrade --cask nidobox
-```
 
 ## 核心能力
 
