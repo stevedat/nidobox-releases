@@ -1,24 +1,24 @@
 name: Báo lỗi / Bug Report
-description: Báo lỗi nhận diện USB/SSD/NTFS, giải nén NidoArchive hoặc truyền tệp NidoDrop LAN
+description: Báo lỗi ổ đĩa NTFS/USB/SSD, NidoDrop LAN, Capture Studio hoặc NidoArchive trên macOS & Windows
 labels: [bug]
 body:
   - type: dropdown
     id: component
     attributes:
-      label: Tính năng gặp sự cố / Affected Component
+      label: Phân hệ gặp sự cố / Affected Module
       options:
-        - Nhận diện & Đọc/Ghi ổ đĩa (NTFS / USB Flash / SD Card / SSD / HDD)
-        - Giải nén & Đóng gói tệp (NidoArchive / libarchive)
-        - Truyền tệp nội bộ (NidoDrop LAN / QR / Clipboard)
-        - Cập nhật tự động (NidoUpdater) / Khởi động cùng macOS
-        - Giao diện / Đa ngôn ngữ (UI / Localization)
+        - Nhận diện & Đọc/Ghi ổ đĩa macOS (NTFS / USB Flash / SD Card / SSD / HDD)
+        - Truyền tệp & Clipboard nội bộ (NidoDrop LAN / QR / PIN)
+        - Chụp màn hình, Ghi chú, OCR & Quay video (Capture Studio / Quick Record)
+        - Giải nén, Đóng gói & Chuyển đổi ảnh/media (NidoArchive / NidoImage)
+        - Cập nhật tự động / Tự khởi động cùng hệ thống (macOS & Windows)
     validations:
       required: true
   - type: input
     id: env
     attributes:
-      label: Phiên bản NidoNTFS, macOS & Loại ổ đĩa / Environment & Drive Model
-      placeholder: "VD: NidoNTFS v1.2.0 • macOS 15.3 (arm64) • USB SanDisk Ultra 64GB"
+      label: Phiên bản NidoBox, Hệ điều hành & Thiết bị / Environment & Hardware
+      placeholder: "VD: NidoBox v1.4.0 • macOS 15.4 (arm64) hoặc Windows 11 24H2 (x64)"
     validations:
       required: true
   - type: textarea
@@ -31,5 +31,5 @@ body:
   - type: textarea
     id: logs
     attributes:
-      label: Nhật ký chẩn đoán / Diagnostic Logs (Optional)
-      description: "Dán nội dung từ nút 'Góp ý & Báo lỗi -> Sao chép báo cáo' trong ứng dụng NidoNTFS"
+      label: Thông số chẩn đoán / Diagnostic Report (Optional)
+      description: "Dán nội dung từ nút 'Góp ý -> Sao chép báo cáo' trong ứng dụng NidoBox (macOS / Windows)"
