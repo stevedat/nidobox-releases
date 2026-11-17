@@ -60,9 +60,9 @@
   <text x="136" y="564" fill="#C084FC" font-family="monospace" font-size="12">Window Snap • Floating Drop Shelf • Clipboard History</text>
 
   <rect x="608" y="438" width="480" height="150" rx="14" fill="url(#card-nb)" stroke="#334155" stroke-width="1.2"/>
-  <rect x="632" y="460" width="164" height="22" rx="6" fill="#F59E0B" fill-opacity="0.15"/>
-  <text x="643" y="475" fill="#FBBF24" font-family="monospace" font-size="11" font-weight="600">VERIFIED DISTRIBUTION</text>
-  <text x="632" y="510" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">Auto-Update &amp; Homebrew</text>
-  <text x="632" y="538" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13">SHA-256 + Developer ID verified in-place upgrades</text>
-  <text x="632" y="564" fill="#FBBF24" font-family="monospace" font-size="12">brew install --cask stevedat/tap/nidobox</text>
+  <rect x="632" y="460" width="184" height="22" rx="6" fill="#F59E0B" fill-opacity="0.15"/>
+  <text x="643" y="475" fill="#FBBF24" font-family="monospace" font-size="11" font-weight="600">DIRECT INSTALLERS &amp; OTA</text>
+  <text x="632" y="510" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">1-Click Direct Download (.dmg / .exe)</text>
+  <text x="632" y="538" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13">Apple Notarized .dmg &amp; Native Windows 10/11 .exe</text>
+  <text x="632" y="564" fill="#FBBF24" font-family="monospace" font-size="12">SHA-256 Verified In-App Auto-Updater • Zero CLI Needed</text>
 </svg>
