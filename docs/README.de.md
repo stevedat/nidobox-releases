@@ -1,29 +1,31 @@
 <p align="center">
-  <img src="../assets/OG-Banner-1200x630.png" alt="NidoBox — NTFS Read/Write, NidoDrop LAN & Mac Utility Suite" width="100%" />
+  <img src="../assets/OG-Banner-1200x630.png" alt="NidoBox — NTFS Read/Write, NidoDrop LAN & Native Desktop Utility Suite" width="100%" />
 </p>
 
 <p align="center">
   <a href="../README.md">English</a> · <a href="README.vi.md">Tiếng Việt</a> · <a href="README.ja.md">日本語</a> · <a href="README.ko.md">한국어</a> · <a href="README.zh.md">简体中文</a> · <a href="README.th.md">ไทย</a> · <a href="README.id.md">Indonesia</a> · <strong>Deutsch</strong> · <a href="README.es.md">Español</a> · <a href="README.it.md">Italiano</a> · <a href="README.pt.md">Português</a>
 </p>
 
-# NidoBox — NTFS Lesen/Schreiben, NidoDrop LAN & macOS-Utility-Suite
+# NidoBox — NTFS Lesen/Schreiben, NidoDrop LAN & Native Desktop-Suite (macOS & Windows)
 
 [![Latest Release](https://img.shields.io/github/v/release/stevedat/nidobox-releases?style=flat-square&label=Release&color=10b981)](https://github.com/stevedat/nidobox-releases/releases/latest)
 [![Homebrew](https://img.shields.io/badge/Homebrew-stevedat%2Ftap%2Fnidobox-FBB040?style=flat-square&logo=homebrew)](https://github.com/stevedat/homebrew-tap)
-[![Apple Silicon](https://img.shields.io/badge/Apple_Silicon-arm64_Full-38bdf8?style=flat-square&logo=apple)](https://github.com/stevedat/nidobox-releases/releases/latest)
-[![Intel Mac](https://img.shields.io/badge/Intel-x86__64_Core-64748b?style=flat-square&logo=apple)](https://github.com/stevedat/nidobox-releases/releases/latest)
+[![macOS arm64 & x64](https://img.shields.io/badge/macOS_13%2B-arm64_%26_x64-38bdf8?style=flat-square&logo=apple)](https://github.com/stevedat/nidobox-releases/releases/latest)
+[![Windows x64 & ARM64](https://img.shields.io/badge/Windows_10%2F11-x64_%26_ARM64-0078D4?style=flat-square&logo=windows)](https://github.com/stevedat/nidobox-releases/releases/latest)
 [![Website](https://img.shields.io/badge/Website-tools.nido--holdings.com-6366f1?style=flat-square)](https://tools.nido-holdings.com)
 
-**NidoBox** *(ehemals NidoNTFS)* ist ein natives SwiftUI-Programm für **macOS 13.0+** mit dedizierten Einzelarchitektur-Builds.
+**NidoBox** *(ehemals NidoNTFS)* ist eine native Utility-Suite für **macOS 13.0+** (SwiftUI) und **Windows 10/11** (Rust + Tauri 2.0 + WebGPU) mit dedizierten Einzelarchitektur-Paketen.
 
 ## Downloads
 
-| Mac-Architektur | Installer (`v1.3.1`) | Funktionsumfang |
+| Plattform & Architektur | Installer (`v1.4.0`) | Funktionsumfang |
 | :--- | :--- | :--- |
-| **Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Vollversion: NTFS R/W, NidoDrop LAN, Archiv, Cleaner, Media, Capture + OCR, Snap (`9.6 MB`) |
-| **Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Kernversion: NTFS R/W, S.M.A.R.T., NidoDrop LAN (`9.0 MB`) |
+| **macOS Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Mac Vollversion: NTFS R/W, NidoDrop LAN, Archiv, Cleaner, Media, Capture + OCR, Snap (`9.7 MB`) |
+| **macOS Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Mac Kernversion: NTFS R/W, S.M.A.R.T., NidoDrop LAN (`9.0 MB`) |
+| **Windows 10/11 x64 (`x86_64`)** · Intel & AMD | [**NidoBox-win-x64.exe**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-win-x64.exe) | Windows x64 Nativ: Capture Studio (WebGPU + OCR), NidoDrop LAN, Batch-Bildkonverter, Archiv, Autostart (`2.9 MB`) |
+| **Windows 11 ARM64 (`aarch64`)** · Snapdragon X | [**NidoBox-win-arm64.exe**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-win-arm64.exe) | Windows ARM64 Nativ (Snapdragon X / Copilot+): Volle Windows-Suite ohne Emulation (`2.6 MB`) |
 
-### Homebrew
+### Homebrew (macOS)
 
 ```bash
 brew install --cask stevedat/tap/nidobox
@@ -32,17 +34,19 @@ brew install --cask stevedat/tap/nidobox
 
 ## Kernfunktionen
 
-- **Kextloses NTFS Lesen/Schreiben (`arm64` & `x86_64`):** User-Space-Mount unter `/Volumes` ohne SIP-Änderung inkl. S.M.A.R.T.
-- **NidoDrop LAN (`arm64` & `x86_64`):** Lokaler Wi-Fi-Datei- und Zwischenablage-Transfer per QR + 4-stelliger PIN.
-- **Studio-Suite (`arm64` Apple Silicon):** Archiv, Cleaner, Medienkonverter, Capture + On-Device-OCR, Window Snap & Drop Shelf.
-- **Nahtloses Upgrade:** Automatisches Update von `NidoNTFS` unter Beibehaltung aller macOS-Berechtigungen.
+- **Kextloses NTFS Lesen/Schreiben (`macOS arm64 & x86_64`):** User-Space-Mount unter `/Volumes` ohne SIP-Änderung inkl. S.M.A.R.T.
+- **Schnelles NidoDrop LAN (`macOS & Windows`):** Lokaler Wi-Fi-Datei- und Zwischenablage-Transfer per QR + 4-stelliger PIN.
+- **Mac Studio-Suite (`macOS arm64`):** Archiv, Cleaner, Medienkonverter, Capture + On-Demand-OCR, Quick Record Studio & Window Snap.
+- **Windows Native Edition (`win-x64 & win-arm64`):** ~3 MB schlanke Rust + WebGPU-App mit Capture Studio, Callout-Notizen, Auto-Shield, On-Demand-OCR, paralleler Bildkonvertierung und System-Tray-Autostart.
 
 ## Oberfläche
 
-| NTFS Read/Write & S.M.A.R.T. | NidoDrop LAN QR Transfer |
+| NTFS Read/Write & Drop Shelf HUD | NidoDrop LAN QR Transfer |
 | :---: | :---: |
-| <img src="../assets/screenshots/01_ntfs_drives_rw.png" width="100%" alt="NidoBox NTFS Read/Write" /> | <img src="../assets/screenshots/02_nidodrop_lan_qr.png" width="100%" alt="NidoDrop LAN Transfer" /> |
-| **Auto-Updater & System Settings** | **Studio Tools & Companion Apps** |
+| <img src="../assets/screenshots/01_ntfs_drives_rw.png" width="100%" alt="NidoBox NTFS Read/Write & Drop Shelf" /> | <img src="../assets/screenshots/02_nidodrop_lan_qr.png" width="100%" alt="NidoDrop LAN Transfer" /> |
+| **Smart Screenshot Markup & Auto-Shield** | **Quick Record Studio & Video Trimmer** |
+| <img src="../assets/screenshots/05_smart_capture_markup.png" width="100%" alt="NidoBox Smart Capture Markup" /> | <img src="../assets/screenshots/06_quick_record_studio.png" width="100%" alt="NidoBox Quick Record Studio" /> |
+| **Auto-Updater & System Settings** | **Batch Media, Archive & Companion Apps** |
 | <img src="../assets/screenshots/03_settings_updater_helper.png" width="100%" alt="NidoBox Settings & Updater" /> | <img src="../assets/screenshots/04_vielotus_ecosystem.png" width="100%" alt="NidoBox Studio & Ecosystem" /> |
 
 ## Architektur
@@ -54,5 +58,8 @@ brew install --cask stevedat/tap/nidobox
 ## SHA-256 Prüfsummen
 
 ```bash
+# macOS / Linux
 shasum -a 256 -c SHA256SUMS.txt
+# Windows PowerShell
+Get-FileHash .\NidoBox-win-*.exe -Algorithm SHA256
 ```
