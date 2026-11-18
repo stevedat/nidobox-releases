@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open-Source &amp; Third-Party Notices — NidoBox</title>
+  <meta name="description" content="Third-party open-source attributions and license notices for NidoBox across macOS, Windows 10/11, and Linux editions.">
+  <link rel="stylesheet" href="legal.css">
+  <script src="legal.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand-link" href="index.html">
+        <span class="brand-badge">NB</span>
+        <span>NidoBox</span>
+      </a>
+      <nav class="nav-row" aria-label="Documentation">
+        <a href="index.html">
+          <span data-lang-block="en">Overview</span>
+          <span data-lang-block="vi">Tổng quan</span>
+        </a>
+        <a href="privacy.html">
+          <span data-lang-block="en">Privacy policy</span>
+          <span data-lang-block="vi">Quyền riêng tư</span>
+        </a>
+        <a href="terms.html">
+          <span data-lang-block="en">Terms &amp; EULA</span>
+          <span data-lang-block="vi">Điều khoản &amp; EULA</span>
+        </a>
+        <a href="support.html">
+          <span data-lang-block="en">Support</span>
+          <span data-lang-block="vi">Hỗ trợ</span>
+        </a>
+        <a href="third-party-notices.html" aria-current="page">
+          <span data-lang-block="en">Open-source notices</span>
+          <span data-lang-block="vi">Giấy phép mã nguồn mở</span>
+        </a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-set-lang="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-btn" data-set-lang="vi" aria-pressed="false">VI</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <div data-lang-block="en">
+      <section class="doc-hero">
+        <h1>Open-source &amp; third-party notices</h1>
+        <p class="doc-lead">
+          NidoBox acknowledges the open-source libraries and system frameworks used across its macOS, Windows 10/11, and Direct Desktop editions. Included components depend on the specific platform package installed.
+        </p>
+      </section>
+
+      <div class="prose">
+        <h2>1. Apple Mac App Store Edition (<code>com.nido.box.mas</code>)</h2>
+        <p>
+          The Mac App Store edition is built in native Swift 6 against official Apple macOS system frameworks (<code>SwiftUI</code>, <code>AppKit</code>, <code>ScreenCaptureKit</code>, <code>Vision</code>, <code>Speech</code>, <code>AVFoundation</code>, <code>Network</code>, <code>DiskArbitration</code>) and dynamically links macOS's built-in <code>libarchive</code>. No GPL or third-party kernel/FUSE binaries are bundled.
+        </p>
+        <ul>
+          <li><strong>libarchive</strong> (macOS system dynamic library) — BSD 2-Clause License. Copyright © Tim Kientzle and contributors (<a href="https://www.libarchive.org/" rel="noopener">libarchive.org</a>).</li>
+        </ul>
+
+        <h2>2. Windows 10/11 Edition (<code>com.nido.box</code>)</h2>
+        <p>
+          The Windows workbench combines a Rust backend and React interface built on permissively licensed open-source packages:
+        </p>
+        <div class="table-wrap">
+          <table class="spec-table">
+            <thead>
+              <tr>
+                <th>Component</th>
+                <th>License</th>
+                <th>Upstream project</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Tauri v2, wry, tao</strong></td>
+                <td>MIT OR Apache-2.0</td>
+                <td><a href="https://github.com/tauri-apps/tauri" rel="noopener">github.com/tauri-apps/tauri</a></td>
+              </tr>
+              <tr>
+                <td><strong>React &amp; React DOM</strong></td>
+                <td>MIT License</td>
+                <td><a href="https://github.com/facebook/react" rel="noopener">github.com/facebook/react</a></td>
+              </tr>
+              <tr>
+                <td><strong>Lucide Icons</strong></td>
+                <td>ISC License</td>
+                <td><a href="https://github.com/lucide-icons/lucide" rel="noopener">github.com/lucide-icons/lucide</a></td>
+              </tr>
+              <tr>
+                <td><strong>image, zip, sevenz-rust, tar, flate2</strong></td>
+                <td>MIT / Apache-2.0</td>
+                <td>Rust crates ecosystem (<a href="https://crates.io" rel="noopener">crates.io</a>)</td>
+              </tr>
+              <tr>
+                <td><strong>qrcode, rqrr, tiny_http, serde</strong></td>
+                <td>MIT OR Apache-2.0</td>
+                <td>Rust crates ecosystem (<a href="https://crates.io" rel="noopener">crates.io</a>)</td>
+              </tr>
+              <tr>
+                <td><strong>windows-rs</strong></td>
+                <td>MIT OR Apache-2.0</td>
+                <td><a href="https://github.com/microsoft/windows-rs" rel="noopener">github.com/microsoft/windows-rs</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>3. Direct macOS Installer Edition only (<code>.dmg</code> outside Mac App Store)</h2>
+        <p>
+          Only the standalone Direct macOS <code>.dmg</code> edition bundles separate user-space command-line utilities for external NTFS volume mounting (excluded from the Mac App Store edition):
+        </p>
+        <ul>
+          <li><strong>Tuxera NTFS-3G</strong> (<code>ntfs-3g</code>, <code>ntfsfix</code>, <code>ntfslabel</code>, <code>mkntfs</code>, <code>libntfs-3g</code>) — GNU General Public License v2 (GPLv2) / GNU Lesser General Public License v2 (LGPLv2), executed as an unmodified separate process. Upstream source: <a href="https://github.com/tuxera/ntfs-3g" rel="noopener">github.com/tuxera/ntfs-3g</a>. Written inquiries for corresponding GPL source code of bundled unmodified binaries may also be sent to <a href="mailto:support@nido-holdings.com">support@nido-holdings.com</a>.</li>
+          <li><strong>FUSE-T</strong> (<code>libfuse-t.dylib</code>, <code>go-nfsv4</code>) — Distributed under the FUSE-T license terms preserving upstream copyright notices (<a href="https://github.com/macos-fuse-t/fuse-t" rel="noopener">github.com/macos-fuse-t/fuse-t</a>).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div data-lang-block="vi">
+      <section class="doc-hero">
+        <h1>Giấy phép mã nguồn mở &amp; thông báo bên thứ ba</h1>
+        <p class="doc-lead">
+          NidoBox trân trọng ghi nhận bản quyền của các thư viện mã nguồn mở và framework hệ thống sử dụng trên từng nền tảng phát hành.
+        </p>
+      </section>
+
+      <div class="prose">
+        <h2>1. Phiên bản Apple Mac App Store (<code>com.nido.box.mas</code>)</h2>
+        <p>
+          Phiên bản Mac App Store được biên dịch bằng Swift 6 gốc dựa trên các framework chính thức của macOS (<code>SwiftUI</code>, <code>AppKit</code>, <code>ScreenCaptureKit</code>, <code>Vision</code>, <code>Speech</code>, <code>AVFoundation</code>, <code>Network</code>, <code>DiskArbitration</code>) và liên kết động với <code>libarchive</code> tích hợp sẵn của macOS. Tuyệt đối không đóng gói kèm bất kỳ tệp thực thi GPL hay FUSE nào.
+        </p>
+        <ul>
+          <li><strong>libarchive</strong> (Thư viện hệ thống macOS) — Giấy phép BSD 2-Clause. Bản quyền © Tim Kientzle và các cộng tác viên (<a href="https://www.libarchive.org/" rel="noopener">libarchive.org</a>).</li>
+        </ul>
+
+        <h2>2. Phiên bản Windows 10/11 (<code>com.nido.box</code>)</h2>
+        <p>
+          Phiên bản Windows sử dụng nhân xử lý Rust kết hợp giao diện React từ các gói mã nguồn mở cấp phép rộng rãi (MIT / Apache-2.0 / ISC):
+        </p>
+        <div class="table-wrap">
+          <table class="spec-table">
+            <thead>
+              <tr>
+                <th>Thành phần</th>
+                <th>Giấy phép</th>
+                <th>Mã nguồn gốc</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Tauri v2, wry, tao</strong></td>
+                <td>MIT OR Apache-2.0</td>
+                <td><a href="https://github.com/tauri-apps/tauri" rel="noopener">github.com/tauri-apps/tauri</a></td>
+              </tr>
+              <tr>
+                <td><strong>React &amp; React DOM</strong></td>
+                <td>MIT License</td>
+                <td><a href="https://github.com/facebook/react" rel="noopener">github.com/facebook/react</a></td>
+              </tr>
+              <tr>
+                <td><strong>Lucide Icons</strong></td>
+                <td>ISC License</td>
+                <td><a href="https://github.com/lucide-icons/lucide" rel="noopener">github.com/lucide-icons/lucide</a></td>
+              </tr>
+              <tr>
+                <td><strong>image, zip, sevenz-rust, tar, flate2</strong></td>
+                <td>MIT / Apache-2.0</td>
+                <td>Hệ sinh thái Rust (<a href="https://crates.io" rel="noopener">crates.io</a>)</td>
+              </tr>
+              <tr>
+                <td><strong>qrcode, rqrr, tiny_http, serde</strong></td>
+                <td>MIT OR Apache-2.0</td>
+                <td>Hệ sinh thái Rust (<a href="https://crates.io" rel="noopener">crates.io</a>)</td>
+              </tr>
+              <tr>
+                <td><strong>windows-rs</strong></td>
+                <td>MIT OR Apache-2.0</td>
+                <td><a href="https://github.com/microsoft/windows-rs" rel="noopener">github.com/microsoft/windows-rs</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>3. Chỉ riêng bộ cài macOS trực tiếp ngoài Store (<code>.dmg</code>)</h2>
+        <p>
+          Chỉ phiên bản <code>.dmg</code> tải trực tiếp ngoài Mac App Store mới đi kèm bộ tiện ích tiến trình độc lập phục vụ đọc/ghi ổ cứng NTFS:
+        </p>
+        <ul>
+          <li><strong>Tuxera NTFS-3G</strong> — Giấy phép GNU GPLv2 / LGPLv2, thực thi dưới dạng tiến trình dòng lệnh độc lập nguyên bản (<a href="https://github.com/tuxera/ntfs-3g" rel="noopener">github.com/tuxera/ntfs-3g</a>).</li>
+          <li><strong>FUSE-T</strong> — Phân phối theo điều khoản giấy phép FUSE-T bảo toàn thông tin tác giả gốc (<a href="https://github.com/macos-fuse-t/fuse-t" rel="noopener">github.com/macos-fuse-t/fuse-t</a>).</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div>© 2026 NIDO HOLDINGS NEXT GENERATION COMPANY LIMITED. All rights reserved.</div>
+      <div>
+        <a href="privacy.html">Privacy</a> ·
+        <a href="terms.html">Terms &amp; EULA</a> ·
+        <a href="support.html">Support</a> ·
+        <a href="third-party-notices.html">Notices</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

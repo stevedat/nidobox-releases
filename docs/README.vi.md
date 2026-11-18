@@ -13,7 +13,7 @@
 [![Windows x64 & ARM64](https://img.shields.io/badge/Windows_10%2F11-x64_%26_ARM64-0078D4?style=flat-square&logo=windows)](https://github.com/stevedat/nidobox-releases/releases/latest)
 [![Website](https://img.shields.io/badge/Website-tools.nido--holdings.com-6366f1?style=flat-square)](https://tools.nido-holdings.com)
 
-**NidoBox** *(tên mới của NidoNTFS)* là bộ tiện ích nguyên bản cho **macOS 13.0+** (SwiftUI) và **Windows 10/11** (Rust + Tauri 2.0 + WebGPU), đóng gói riêng từng kiến trúc chip, không qua lớp giả lập.
+**NidoBox** là bộ tiện ích nguyên bản cho **macOS 13.0+** (SwiftUI) và **Windows 10/11** (Rust + Tauri 2.0 + WebGPU), đóng gói riêng từng kiến trúc chip, không qua lớp giả lập.
 
 ## Tải Bộ Cài
 

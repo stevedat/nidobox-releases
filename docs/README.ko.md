@@ -13,7 +13,7 @@
 [![Windows x64 & ARM64](https://img.shields.io/badge/Windows_10%2F11-x64_%26_ARM64-0078D4?style=flat-square&logo=windows)](https://github.com/stevedat/nidobox-releases/releases/latest)
 [![Website](https://img.shields.io/badge/Website-tools.nido--holdings.com-6366f1?style=flat-square)](https://tools.nido-holdings.com)
 
-**NidoBox** *(구 NidoNTFS)* 는 **macOS 13.0+** (SwiftUI) 및 **Windows 10/11** (Rust + Tauri 2.0 + WebGPU) 용 네이티브 유틸리티 스위트로, 아키텍처별 전용 빌드로 제공됩니다。
+**NidoBox** 는 **macOS 13.0+** (SwiftUI) 및 **Windows 10/11** (Rust + Tauri 2.0 + WebGPU) 용 네이티브 유틸리티 스위트로, 아키텍처별 전용 빌드로 제공됩니다。
 
 ## 다운로드
 

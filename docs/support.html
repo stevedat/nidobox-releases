@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support &amp; FAQ — NidoBox</title>
+  <meta name="description" content="Official technical support, permission setup guides, troubleshooting FAQ, and contact details for NidoBox on macOS and Windows 10/11.">
+  <link rel="stylesheet" href="legal.css">
+  <script src="legal.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand-link" href="index.html">
+        <span class="brand-badge">NB</span>
+        <span>NidoBox</span>
+      </a>
+      <nav class="nav-row" aria-label="Documentation">
+        <a href="index.html">
+          <span data-lang-block="en">Overview</span>
+          <span data-lang-block="vi">Tổng quan</span>
+        </a>
+        <a href="privacy.html">
+          <span data-lang-block="en">Privacy policy</span>
+          <span data-lang-block="vi">Quyền riêng tư</span>
+        </a>
+        <a href="terms.html">
+          <span data-lang-block="en">Terms &amp; EULA</span>
+          <span data-lang-block="vi">Điều khoản &amp; EULA</span>
+        </a>
+        <a href="support.html" aria-current="page">
+          <span data-lang-block="en">Support</span>
+          <span data-lang-block="vi">Hỗ trợ</span>
+        </a>
+        <a href="third-party-notices.html">
+          <span data-lang-block="en">Open-source notices</span>
+          <span data-lang-block="vi">Giấy phép mã nguồn mở</span>
+        </a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-set-lang="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-btn" data-set-lang="vi" aria-pressed="false">VI</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <!-- ==================== ENGLISH ==================== -->
+    <div data-lang-block="en">
+      <section class="doc-hero">
+        <h1>Support center &amp; troubleshooting</h1>
+        <p class="doc-lead">
+          Direct assistance, system permission setup, and answers to common questions for NidoBox on macOS and Windows 10/11.
+        </p>
+      </section>
+
+      <section class="summary-ledger" aria-label="Support contact summary">
+        <div class="summary-ledger-header">
+          <span>Direct developer support</span>
+          <span class="status-tag">Response within 24–48 business hours</span>
+        </div>
+        <div class="ledger-grid">
+          <div class="ledger-cell">
+            <strong>Legal publisher</strong>
+            <span>NIDO HOLDINGS NEXT GENERATION COMPANY LIMITED</span>
+          </div>
+          <div class="ledger-cell">
+            <strong>Support email</strong>
+            <span><a href="mailto:support@nido-holdings.com">support@nido-holdings.com</a></span>
+          </div>
+          <div class="ledger-cell">
+            <strong>In-app bug reporting</strong>
+            <span>Open NidoBox → Click <em>Send Feedback</em> in the sidebar or menu bar.</span>
+          </div>
+          <div class="ledger-cell">
+            <strong>Public issue tracker</strong>
+            <span><a href="https://github.com/stevedat/nidobox-releases/issues" rel="noopener">github.com/stevedat/nidobox-releases/issues</a></span>
+          </div>
+        </div>
+      </section>
+
+      <div class="prose">
+        <h2 id="permissions-guide">1. Enabling Screen Recording &amp; Microphone permissions</h2>
+        <h3>macOS 13 Ventura or later</h3>
+        <ol>
+          <li>When you first click <strong>Capture Region</strong> or <strong>Quick Record</strong> in Capture Studio, macOS prompts for Screen Recording access.</li>
+          <li>Open <strong>System Settings → Privacy &amp; Security → Screen &amp; System Audio Recording</strong> and switch <strong>NidoBox</strong> on.</li>
+          <li>If you want voiceover recording or offline <code>.srt</code> speech subtitles, also allow <strong>Microphone</strong> and <strong>Speech Recognition</strong> under <strong>Privacy &amp; Security</strong>.</li>
+        </ol>
+
+        <h3>Windows 10 (1903+) &amp; Windows 11</h3>
+        <ol>
+          <li>Capture Studio uses native Windows graphics capture and offline <code>Windows.Media.Ocr</code>.</li>
+          <li>To scan additional OCR languages offline on Windows, open <strong>Windows Settings → Time &amp; language → Language &amp; region</strong> and ensure the language pack (with Basic typing / OCR) is installed.</li>
+        </ol>
+
+        <h2 id="nidodrop-faq">2. Troubleshooting NidoDrop LAN connections</h2>
+        <ul>
+          <li><strong>Phone cannot reach the QR link:</strong> Confirm both your computer and mobile device are connected to the same Wi-Fi subnet (not an isolated "Guest Wi-Fi" with client isolation enabled).</li>
+          <li><strong>Firewall prompt:</strong> On first start, allow NidoBox to accept incoming local network connections when prompted by macOS Firewall or Windows Defender Firewall (Private Networks).</li>
+          <li><strong>Multiple network adapters (VPN / Docker / VM):</strong> Select your active Wi-Fi or Ethernet IPv4 adapter from the <em>Network adapter</em> picker inside the NidoDrop tab.</li>
+        </ul>
+
+        <h2 id="shelf-faq">3. Using NidoShelf (Top Notch &amp; Floating Window)</h2>
+        <ul>
+          <li>On macOS, move your pointer to the top-center notch (or top-center menu bar edge on external displays) or drag a file toward the top center to expand the contextual shelf.</li>
+          <li>Click the detach icon in the shelf header at any time to switch between <strong>Top Notch Mode</strong> and a movable <strong>Floating Window</strong>.</li>
+        </ul>
+
+        <h2 id="archive-faq">4. Fixing garbled Vietnamese or CJK filenames in ZIP/RAR/7Z</h2>
+        <p>
+          Archives created on legacy Windows systems often encode filenames without UTF-8 flags, resulting in unreadable characters on macOS or other locales. Open the archive through <strong>NidoArchive</strong> in NidoBox to automatically detect and normalize UTF-8, Shift-JIS, GB18030, EUC-KR, and Windows-1258 encodings while blocking unsafe relative paths.
+        </p>
+
+        <h2 id="edition-matrix">5. Feature availability across platform editions</h2>
+        <p>
+          Because Apple Mac App Store applications run inside the strict macOS App Sandbox for maximum system security, kernel/privileged disk mounting and cross-app window control are excluded from the Mac App Store edition:
+        </p>
+        <div class="table-wrap">
+          <table class="spec-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Mac App Store Edition</th>
+                <th>Windows 10/11 Edition</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Capture Studio, Smart Redact &amp; Offline OCR</td>
+                <td>Included (Apple Vision &amp; ScreenCaptureKit)</td>
+                <td>Included (Windows.Media.Ocr)</td>
+              </tr>
+              <tr>
+                <td>Screen Recording &amp; Offline <code>.srt</code> Subtitles</td>
+                <td>Included</td>
+                <td>Capture Studio image framing &amp; markup</td>
+              </tr>
+              <tr>
+                <td>NidoShelf (Contextual Notch &amp; Floating Shelf)</td>
+                <td>Included</td>
+                <td>macOS exclusive</td>
+              </tr>
+              <tr>
+                <td>NidoDrop LAN (QR, PIN, Files &amp; 2-Way Clipboard)</td>
+                <td>Included</td>
+                <td>Included</td>
+              </tr>
+              <tr>
+                <td>NidoImage / Media Batch Converter</td>
+                <td>Included (Images &amp; Video)</td>
+                <td>Included (Batch Image Optimizer)</td>
+              </tr>
+              <tr>
+                <td>NidoArchive (UTF-8 / CJK / Vietnamese Safe)</td>
+                <td>Included</td>
+                <td>Included</td>
+              </tr>
+              <tr>
+                <td>Large File Scanner &amp; External Drive Safe Eject</td>
+                <td>Included (user-selected folders &amp; volume monitor)</td>
+                <td>OS native NTFS &amp; Explorer integration</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="reset-data">6. Resetting local preferences or uninstalling</h2>
+        <ul>
+          <li><strong>macOS:</strong> Open <strong>NidoBox → Settings → General</strong> to clear Clipboard History or reset preferences to factory defaults. Moving <code>NidoBox.app</code> to Trash removes the application.</li>
+          <li><strong>Windows 10/11:</strong> Uninstall via <strong>Windows Settings → Apps → Installed apps → NidoBox</strong>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ==================== TIẾNG VIỆT ==================== -->
+    <div data-lang-block="vi">
+      <section class="doc-hero">
+        <h1>Trung tâm hỗ trợ &amp; giải đáp kỹ thuật</h1>
+        <p class="doc-lead">
+          Thông tin liên hệ trực tiếp với nhà phát triển, hướng dẫn cấp quyền hệ thống và cách xử lý các tình huống thường gặp trên macOS và Windows 10/11.
+        </p>
+      </section>
+
+      <section class="summary-ledger" aria-label="Thông tin liên hệ hỗ trợ">
+        <div class="summary-ledger-header">
+          <span>Kênh hỗ trợ chính thức</span>
+          <span class="status-tag">Phản hồi trong 24–48 giờ làm việc</span>
+        </div>
+        <div class="ledger-grid">
+          <div class="ledger-cell">
+            <strong>Pháp nhân phát hành</strong>
+            <span>NIDO HOLDINGS NEXT GENERATION COMPANY LIMITED</span>
+          </div>
+          <div class="ledger-cell">
+            <strong>Email hỗ trợ kỹ thuật</strong>
+            <span><a href="mailto:support@nido-holdings.com">support@nido-holdings.com</a></span>
+          </div>
+          <div class="ledger-cell">
+            <strong>Gửi báo cáo ngay trong ứng dụng</strong>
+            <span>Mở NidoBox → Chọn <em>Góp ý &amp; Báo lỗi</em> ở thanh điều hướng.</span>
+          </div>
+          <div class="ledger-cell">
+            <strong>Theo dõi lỗi công khai</strong>
+            <span><a href="https://github.com/stevedat/nidobox-releases/issues" rel="noopener">github.com/stevedat/nidobox-releases/issues</a></span>
+          </div>
+        </div>
+      </section>
+
+      <div class="prose">
+        <h2 id="vi-permissions-guide">1. Hướng dẫn bật quyền Ghi màn hình &amp; Micro</h2>
+        <h3>Trên macOS 13 Ventura trở lên</h3>
+        <ol>
+          <li>Khi lần đầu bấm <strong>Chụp vùng chọn</strong> hoặc <strong>Quay nhanh</strong> trong Capture Studio, macOS sẽ hiển thị hộp thoại xin quyền Ghi màn hình.</li>
+          <li>Vào <strong>Cài đặt Hệ thống (System Settings) → Quyền riêng tư &amp; Bảo mật → Ghi màn hình &amp; Âm thanh hệ thống</strong> và bật công tắc cho <strong>NidoBox</strong>.</li>
+          <li>Nếu cần thu âm thuyết minh hoặc tạo phụ đề <code>.srt</code> tự động, bật thêm quyền <strong>Micro</strong> và <strong>Nhận diện giọng nói</strong>.</li>
+        </ol>
+
+        <h3>Trên Windows 10 (1903+) &amp; Windows 11</h3>
+        <ol>
+          <li>Capture Studio sử dụng bộ nhận diện ngoại tuyến <code>Windows.Media.Ocr</code> tích hợp sẵn của Windows.</li>
+          <li>Để quét thêm ngôn ngữ mới ngoại tuyến, mở <strong>Windows Settings → Time &amp; language → Language &amp; region</strong> và cài gói ngôn ngữ tương ứng.</li>
+        </ol>
+
+        <h2 id="vi-nidodrop-faq">2. Xử lý khi điện thoại không mở được mã QR NidoDrop LAN</h2>
+        <ul>
+          <li><strong>Kiểm tra cùng mạng Wi-Fi:</strong> Đảm bảo máy tính và điện thoại cùng kết nối vào một mạng nội bộ (tránh mạng "Guest Wi-Fi" có bật chế độ cô lập thiết bị).</li>
+          <li><strong>Tường lửa (Firewall):</strong> Cho phép NidoBox nhận kết nối mạng nội bộ (Private Networks) khi macOS Firewall hoặc Windows Defender Firewall hỏi ở lần bật đầu tiên.</li>
+          <li><strong>Máy đang bật VPN hoặc máy ảo:</strong> Chọn đúng địa chỉ IPv4 của card Wi-Fi/Ethernet thật tại mục <em>Card mạng ưu tiên</em> trong thẻ NidoDrop.</li>
+        </ul>
+
+        <h2 id="vi-shelf-faq">3. Sử dụng kệ tạm NidoShelf (Tai thỏ &amp; Cửa sổ nổi)</h2>
+        <ul>
+          <li>Trên macOS, đưa trỏ chuột hoặc kéo tệp lên chính giữa cạnh trên màn hình (vùng tai thỏ) để mở nhanh kệ tạm NidoShelf.</li>
+          <li>Bấm nút tách cửa sổ ngay trên thanh tiêu đề của kệ để chuyển đổi tức thì giữa <strong>Chế độ Tai thỏ</strong> và <strong>Cửa sổ nổi độc lập</strong>.</li>
+        </ul>
+
+        <h2 id="vi-archive-faq">4. Khắc phục lỗi font tên tệp Tiếng Việt, Nhật, Trung khi giải nén</h2>
+        <p>
+          Các tệp <code>.zip</code> / <code>.rar</code> nén từ máy khác thường thiếu cờ UTF-8 khiến tên tệp Tiếng Việt hoặc CJK bị vỡ ký tự. Hãy mở thông qua phân hệ <strong>NidoArchive</strong> trong NidoBox để tự động nhận diện bảng mã và khôi phục nguyên vẹn dấu tiếng Việt.
+        </p>
+
+        <h2 id="vi-edition-matrix">5. Đối chiếu tính năng giữa các phiên bản trên Store</h2>
+        <p>
+          Do ứng dụng trên Apple Mac App Store vận hành trong môi trường cô lập App Sandbox nghiêm ngặt của Apple để bảo vệ an toàn hệ thống, các tác vụ can thiệp cấp hệ thống bên ngoài Sandbox được lược giản như sau:
+        </p>
+        <div class="table-wrap">
+          <table class="spec-table">
+            <thead>
+              <tr>
+                <th>Tính năng</th>
+                <th>Bản Mac App Store</th>
+                <th>Bản Windows 10/11</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Capture Studio, Che thông tin nhạy cảm &amp; OCR ngoại tuyến</td>
+                <td>Có đầy đủ (Apple Vision &amp; ScreenCaptureKit)</td>
+                <td>Có đầy đủ (Windows.Media.Ocr)</td>
+              </tr>
+              <tr>
+                <td>Quay màn hình &amp; tạo phụ đề <code>.srt</code> tự động</td>
+                <td>Có đầy đủ</td>
+                <td>Chụp, căn khung &amp; đánh dấu ảnh Studio</td>
+              </tr>
+              <tr>
+                <td>Kệ tạm NidoShelf (Tai thỏ &amp; Cửa sổ nổi)</td>
+                <td>Có đầy đủ</td>
+                <td>Dành riêng cho macOS</td>
+              </tr>
+              <tr>
+                <td>NidoDrop LAN (Mã QR, PIN, Truyền tệp &amp; Clipboard 2 chiều)</td>
+                <td>Có đầy đủ</td>
+                <td>Có đầy đủ</td>
+              </tr>
+              <tr>
+                <td>NidoImage / Chuyển đổi ảnh &amp; video hàng loạt</td>
+                <td>Có đầy đủ (Ảnh &amp; Video)</td>
+                <td>Có đầy đủ (Nén &amp; đổi định dạng ảnh)</td>
+              </tr>
+              <tr>
+                <td>NidoArchive (Giải nén chuẩn dấu Tiếng Việt &amp; CJK)</td>
+                <td>Có đầy đủ</td>
+                <td>Có đầy đủ</td>
+              </tr>
+              <tr>
+                <td>Quét tệp dung lượng lớn &amp; Ngắt ổ ngoài an toàn</td>
+                <td>Có đầy đủ (thư mục người dùng chọn &amp; Eject 1 chạm)</td>
+                <td>Tích hợp sẵn NTFS gốc của Windows</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="vi-reset">6. Khôi phục cài đặt gốc hoặc gỡ cài đặt</h2>
+        <ul>
+          <li><strong>macOS:</strong> Mở <strong>NidoBox → Cài đặt → Chung</strong> để xoá lịch sử Clipboard hoặc khôi phục cài đặt mặc định; kéo <code>NidoBox.app</code> vào Thùng rác khi muốn gỡ ứng dụng.</li>
+          <li><strong>Windows 10/11:</strong> Gỡ cài đặt chuẩn qua <strong>Windows Settings → Apps → Installed apps → NidoBox</strong>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div>© 2026 NIDO HOLDINGS NEXT GENERATION COMPANY LIMITED. All rights reserved.</div>
+      <div>
+        <a href="privacy.html">Privacy</a> ·
+        <a href="terms.html">Terms &amp; EULA</a> ·
+        <a href="support.html">Support</a> ·
+        <a href="third-party-notices.html">Notices</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

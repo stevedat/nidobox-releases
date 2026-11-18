@@ -13,7 +13,7 @@
 [![Windows x64 & ARM64](https://img.shields.io/badge/Windows_10%2F11-x64_%26_ARM64-0078D4?style=flat-square&logo=windows)](https://github.com/stevedat/nidobox-releases/releases/latest)
 [![Website](https://img.shields.io/badge/Website-tools.nido--holdings.com-6366f1?style=flat-square)](https://tools.nido-holdings.com)
 
-**NidoBox** *(原名 NidoNTFS)* 是面向 **macOS 13.0+** (SwiftUI) 与 **Windows 10/11** (Rust + Tauri 2.0 + WebGPU) 的原生桌面工具箱，按芯片架构提供独立单架构安装包。
+**NidoBox** 是面向 **macOS 13.0+** (SwiftUI) 与 **Windows 10/11** (Rust + Tauri 2.0 + WebGPU) 的原生桌面工具箱，按芯片架构提供独立单架构安装包。
 
 ## 下载安装包
 
