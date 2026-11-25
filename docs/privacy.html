@@ -90,7 +90,7 @@
         <ul>
           <li><strong>Apple Mac App Store Edition</strong> (Bundle ID: <code>com.nido.box.mas</code>)</li>
           <li><strong>Microsoft Store Edition for Windows 10/11</strong> (App ID: <code>com.nido.box</code>)</li>
-          <li><strong>Direct Desktop Installer Editions</strong> for macOS (<code>.dmg</code>, Bundle ID: <code>com.nido.box</code>), Windows (<code>.exe</code> / <code>.msi</code>), and Linux (<code>.deb</code>)</li>
+          <li><strong>Direct Desktop Installer Editions</strong> for macOS (<code>.dmg</code>, Bundle ID: <code>com.nido.box</code>), Windows (<code>.exe</code> / <code>.msi</code>), and Linux (<code>.deb</code>, <code>.rpm</code>, <code>.pkg.tar.zst</code>, <code>.tar.gz</code>)</li>
         </ul>
 
         <h2 id="local-processing">2. On-device processing (data that never leaves your device)</h2>
@@ -99,7 +99,7 @@
         </p>
         <ul>
           <li><strong>Capture Studio, Screen Recording &amp; Subtitles:</strong> Screenshots, window captures, video recordings, microphone/system audio streams, and generated <code>.srt</code> speech transcriptions are processed in local memory using Apple <code>ScreenCaptureKit</code>, <code>AVFoundation</code>, <code>Speech</code>, or Windows capture APIs. Media is saved only to local folders or the clipboard as chosen by you.</li>
-          <li><strong>Offline OCR &amp; Smart Redact:</strong> Text recognition and credential detection (emails, phone numbers, IP addresses, API keys) run strictly offline via Apple <code>Vision</code> on macOS and <code>Windows.Media.Ocr</code> on Windows.</li>
+          <li><strong>Offline OCR &amp; Smart Redact:</strong> Text recognition and credential detection (emails, phone numbers, IP addresses, API keys) run strictly offline via Apple <code>Vision</code> on macOS, <code>Windows.Media.Ocr</code> on Windows, and system <code>Tesseract</code> on Linux (OCR stays disabled by default until triggered; on Linux without Tesseract, an explicitly configured local NidoAI Gateway agent may be used on demand).</li>
           <li><strong>NidoShelf &amp; Clipboard History:</strong> Staged files and clipboard entries are stored exclusively in your local user container or memory. Password manager concealed markers (such as <code>org.nspasteboard.ConcealedType</code>) are respected, and you can clear history or disable clipboard monitoring at any time in Settings.</li>
           <li><strong>NidoImage, Media Converter &amp; NidoArchive:</strong> Format conversion, EXIF metadata removal, archive inspection, extraction, and compression run entirely on your local CPU/GPU.</li>
           <li><strong>External Drive Monitor &amp; Large File Scanner:</strong> Volume capacity metadata and file size listings are read locally on your device. File names, directory trees, and file contents are never transmitted externally.</li>
@@ -136,7 +136,7 @@
                 <td>Managed by Microsoft Store (or user-initiated release check on standalone Win32 builds).</td>
               </tr>
               <tr>
-                <td><strong>Direct Installers</strong> (<code>.dmg</code>, <code>.exe</code>, <code>.deb</code>)</td>
+                <td><strong>Direct Installers</strong> (<code>.dmg</code>, <code>.exe</code>, <code>.deb</code>, <code>.rpm</code>, <code>.pkg.tar.zst</code>, <code>.tar.gz</code>)</td>
                 <td>Checks <code>latest-mac.json</code> / <code>latest-win.json</code> / <code>latest-linux.json</code> via Cloudflare Edge / GitHub Releases unless turned off in Settings.</td>
                 <td>Downloads signed release packages from GitHub Releases only when initiated or enabled by the user.</td>
               </tr>
@@ -288,7 +288,7 @@
         <ul>
           <li><strong>Phiên bản Apple Mac App Store</strong> (Bundle ID: <code>com.nido.box.mas</code>)</li>
           <li><strong>Phiên bản Microsoft Store cho Windows 10/11</strong> (App ID: <code>com.nido.box</code>)</li>
-          <li><strong>Phiên bản cài đặt trực tiếp (Direct Desktop)</strong> cho macOS (<code>.dmg</code>, Bundle ID: <code>com.nido.box</code>), Windows (<code>.exe</code> / <code>.msi</code>) và Linux (<code>.deb</code>)</li>
+          <li><strong>Phiên bản cài đặt trực tiếp (Direct Desktop)</strong> cho macOS (<code>.dmg</code>, Bundle ID: <code>com.nido.box</code>), Windows (<code>.exe</code> / <code>.msi</code>) và Linux (<code>.deb</code>, <code>.rpm</code>, <code>.pkg.tar.zst</code>, <code>.tar.gz</code>)</li>
         </ul>
 
         <h2 id="vi-local">2. Xử lý dữ liệu ngay trên thiết bị (Dữ liệu không rời khỏi máy của bạn)</h2>
@@ -297,7 +297,7 @@
         </p>
         <ul>
           <li><strong>Capture Studio, Quay màn hình &amp; Phụ đề:</strong> Ảnh chụp vùng chọn/cửa sổ, tệp quay màn hình, luồng âm thanh micro/hệ thống và phụ đề <code>.srt</code> được xử lý trực tiếp trong bộ nhớ máy qua Apple <code>ScreenCaptureKit</code>, <code>AVFoundation</code>, <code>Speech</code> hoặc API gốc của Windows, chỉ lưu vào thư mục hoặc Clipboard do bạn chỉ định.</li>
-          <li><strong>Nhận diện chữ OCR &amp; Che thông tin nhạy cảm (Smart Redact):</strong> Chạy 100% ngoại tuyến bằng Apple <code>Vision</code> (macOS) và <code>Windows.Media.Ocr</code> (Windows).</li>
+          <li><strong>Nhận diện chữ OCR &amp; Che thông tin nhạy cảm (Smart Redact):</strong> Chạy ngoại tuyến bằng Apple <code>Vision</code> (macOS), <code>Windows.Media.Ocr</code> (Windows) và <code>Tesseract</code> hệ thống trên Linux (mặc định tắt cho tới khi người dùng bấm quét; nếu máy Linux chưa cài Tesseract nhưng đã cấu hình NidoAI Gateway nội bộ, ứng dụng có thể dùng fallback Agent OCR theo yêu cầu).</li>
           <li><strong>Kệ tạm NidoShelf &amp; Lịch sử Clipboard:</strong> Chỉ lưu cục bộ trong vùng chứa người dùng trên máy. Các mục mật khẩu đánh dấu ẩn (như <code>org.nspasteboard.ConcealedType</code>) được tôn trọng; bạn có thể xoá sạch hoặc tắt bất cứ lúc nào trong phần Cài đặt.</li>
           <li><strong>NidoImage, Chuyển đổi Media &amp; NidoArchive:</strong> Toàn bộ quá trình nén, đổi định dạng, gỡ siêu dữ liệu EXIF và giải nén/đóng gói tệp diễn ra hoàn toàn trên CPU/GPU của máy bạn.</li>
           <li><strong>Quản lý ổ đĩa ngoài &amp; Quét tệp lớn:</strong> Thông tin dung lượng ổ đĩa và kích thước tệp chỉ được đọc cục bộ; tên tệp, đường dẫn và nội dung tệp không bao giờ bị gửi ra ngoài.</li>
@@ -334,8 +334,8 @@
                 <td>Cập nhật thông qua Microsoft Store (hoặc do người dùng chủ động kiểm tra trên bản Win32 độc lập).</td>
               </tr>
               <tr>
-                <td><strong>Bộ cài trực tiếp</strong> (<code>.dmg</code>, <code>.exe</code>, <code>.deb</code>)</td>
-                <td>Kiểm tra tệp khai báo phiên bản mới (<code>latest-mac.json</code> / <code>latest-win.json</code>) qua Cloudflare Edge / GitHub Releases (có thể tắt trong Cài đặt).</td>
+                <td><strong>Bộ cài trực tiếp</strong> (<code>.dmg</code>, <code>.exe</code>, <code>.deb</code>, <code>.rpm</code>, <code>.pkg.tar.zst</code>, <code>.tar.gz</code>)</td>
+                <td>Kiểm tra tệp khai báo phiên bản mới (<code>latest-mac.json</code> / <code>latest-win.json</code> / <code>latest-linux.json</code>) qua Cloudflare Edge / GitHub Releases (có thể tắt bằng <code>NIDOBOX_NO_TRACK=1</code> hoặc trong Cài đặt).</td>
                 <td>Tải gói cài đặt đã ký số từ GitHub Releases khi người dùng cho phép.</td>
               </tr>
             </tbody>

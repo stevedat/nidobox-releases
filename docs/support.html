@@ -94,6 +94,13 @@
           <li>To scan additional OCR languages offline on Windows, open <strong>Windows Settings → Time &amp; language → Language &amp; region</strong> and ensure the language pack (with Basic typing / OCR) is installed.</li>
         </ol>
 
+        <h3>Linux (Debian/Ubuntu, Fedora/openSUSE, Arch &amp; Ubuntu-Nido)</h3>
+        <ol>
+          <li>Screenshots use standard <code>xdg-desktop-portal</code> (Wayland-native) with built-in region snipping; approve the desktop screenshot permission prompt on first use.</li>
+          <li>Offline OCR is disabled by default until you click <strong>Scan OCR</strong>. Install <code>tesseract-ocr</code> with <code>tesseract-ocr-vie</code> / <code>tesseract-ocr-eng</code> (or distro equivalents) for offline recognition, or configure local NidoAI Gateway for optional Agent OCR fallback.</li>
+          <li>1-click NTFS dirty-bit repair invokes <code>ntfsfix -d</code> safely through PolicyKit (<code>pkexec</code>) with administrator authentication.</li>
+        </ol>
+
         <h2 id="nidodrop-faq">2. Troubleshooting NidoDrop LAN connections</h2>
         <ul>
           <li><strong>Phone cannot reach the QR link:</strong> Confirm both your computer and mobile device are connected to the same Wi-Fi subnet (not an isolated "Guest Wi-Fi" with client isolation enabled).</li>
@@ -169,6 +176,7 @@
         <ul>
           <li><strong>macOS:</strong> Open <strong>NidoBox → Settings → General</strong> to clear Clipboard History or reset preferences to factory defaults. Moving <code>NidoBox.app</code> to Trash removes the application.</li>
           <li><strong>Windows 10/11:</strong> Uninstall via <strong>Windows Settings → Apps → Installed apps → NidoBox</strong>.</li>
+          <li><strong>Linux:</strong> Uninstall via <code>sudo apt remove nidobox</code> (Debian/Ubuntu), <code>sudo dnf remove nidobox</code> (Fedora), <code>sudo pacman -R nidobox-bin</code> (Arch), or <code>./uninstall.sh</code> for portable tarballs. User preferences are stored in <code>~/.config/nidobox/settings.json</code>.</li>
         </ul>
       </div>
     </div>
@@ -220,6 +228,13 @@
         <ol>
           <li>Capture Studio sử dụng bộ nhận diện ngoại tuyến <code>Windows.Media.Ocr</code> tích hợp sẵn của Windows.</li>
           <li>Để quét thêm ngôn ngữ mới ngoại tuyến, mở <strong>Windows Settings → Time &amp; language → Language &amp; region</strong> và cài gói ngôn ngữ tương ứng.</li>
+        </ol>
+
+        <h3>Trên Linux (Debian/Ubuntu, Fedora/openSUSE, Arch &amp; Ubuntu-Nido)</h3>
+        <ol>
+          <li>Capture Studio chụp màn hình chuẩn Wayland qua <code>xdg-desktop-portal</code> kèm khung cắt vùng tích hợp; chấp thuận hộp thoại cấp quyền chụp màn hình ở lần dùng đầu tiên.</li>
+          <li>OCR ngoại tuyến mặc định tắt cho tới khi bạn bấm <strong>Quét OCR</strong>. Cài <code>tesseract-ocr</code> kèm <code>tesseract-ocr-vie</code> / <code>tesseract-ocr-eng</code> (hoặc gói tương ứng theo distro) để quét offline, hoặc cấu hình NidoAI Gateway nội bộ để dùng fallback Agent OCR.</li>
+          <li>Cứu hộ ổ NTFS bị kẹt Chỉ đọc gọi <code>ntfsfix -d</code> qua PolicyKit (<code>pkexec</code>) có xác thực quản trị viên.</li>
         </ol>
 
         <h2 id="vi-nidodrop-faq">2. Xử lý khi điện thoại không mở được mã QR NidoDrop LAN</h2>
@@ -297,6 +312,7 @@
         <ul>
           <li><strong>macOS:</strong> Mở <strong>NidoBox → Cài đặt → Chung</strong> để xoá lịch sử Clipboard hoặc khôi phục cài đặt mặc định; kéo <code>NidoBox.app</code> vào Thùng rác khi muốn gỡ ứng dụng.</li>
           <li><strong>Windows 10/11:</strong> Gỡ cài đặt chuẩn qua <strong>Windows Settings → Apps → Installed apps → NidoBox</strong>.</li>
+          <li><strong>Linux:</strong> Gỡ qua <code>sudo apt remove nidobox</code> (Debian/Ubuntu), <code>sudo dnf remove nidobox</code> (Fedora), <code>sudo pacman -R nidobox-bin</code> (Arch), hoặc <code>./uninstall.sh</code> với bản portable. Tùy chọn người dùng lưu tại <code>~/.config/nidobox/settings.json</code>.</li>
         </ul>
       </div>
     </div>

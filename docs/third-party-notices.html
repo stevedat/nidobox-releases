@@ -118,6 +118,15 @@
           <li><strong>Tuxera NTFS-3G</strong> (<code>ntfs-3g</code>, <code>ntfsfix</code>, <code>ntfslabel</code>, <code>mkntfs</code>, <code>libntfs-3g</code>) — GNU General Public License v2 (GPLv2) / GNU Lesser General Public License v2 (LGPLv2), executed as an unmodified separate process. Upstream source: <a href="https://github.com/tuxera/ntfs-3g" rel="noopener">github.com/tuxera/ntfs-3g</a>. Written inquiries for corresponding GPL source code of bundled unmodified binaries may also be sent to <a href="mailto:support@nido-holdings.com">support@nido-holdings.com</a>.</li>
           <li><strong>FUSE-T</strong> (<code>libfuse-t.dylib</code>, <code>go-nfsv4</code>) — Distributed under the FUSE-T license terms preserving upstream copyright notices (<a href="https://github.com/macos-fuse-t/fuse-t" rel="noopener">github.com/macos-fuse-t/fuse-t</a>).</li>
         </ul>
+
+        <h2>4. Linux Multi-Distro Edition (<code>com.nidoholdings.NidoBox</code>)</h2>
+        <p>
+          The Linux edition ships a statically linked Rust engine (<code>nidobox-engine</code>, built on <code>nidobox-core</code> with MIT / Apache-2.0 crates and musl libc) paired with a native Python GTK4 / Libadwaita interface dynamically invoking system-provided desktop libraries:
+        </p>
+        <ul>
+          <li><strong>GTK4, Libadwaita, PyGObject, Pango</strong> — GNU LGPLv2.1+ (provided dynamically by your Linux distribution).</li>
+          <li><strong>Tesseract OCR &amp; ntfs-3g (optional system packages)</strong> — Apache-2.0 and GPLv2+, invoked only as external system commands when installed by the user.</li>
+        </ul>
       </div>
     </div>
 
@@ -193,6 +202,15 @@
         <ul>
           <li><strong>Tuxera NTFS-3G</strong> — Giấy phép GNU GPLv2 / LGPLv2, thực thi dưới dạng tiến trình dòng lệnh độc lập nguyên bản (<a href="https://github.com/tuxera/ntfs-3g" rel="noopener">github.com/tuxera/ntfs-3g</a>).</li>
           <li><strong>FUSE-T</strong> — Phân phối theo điều khoản giấy phép FUSE-T bảo toàn thông tin tác giả gốc (<a href="https://github.com/macos-fuse-t/fuse-t" rel="noopener">github.com/macos-fuse-t/fuse-t</a>).</li>
+        </ul>
+
+        <h2>4. Phiên bản Linux đa bản phân phối (<code>com.nidoholdings.NidoBox</code>)</h2>
+        <p>
+          Phiên bản Linux kết hợp nhân Rust liên kết tĩnh (<code>nidobox-engine</code> từ <code>nidobox-core</code>, musl libc và các crate MIT / Apache-2.0) cùng giao diện gốc Python GTK4 / Libadwaita dùng thư viện hệ thống của bản phân phối:
+        </p>
+        <ul>
+          <li><strong>GTK4, Libadwaita, PyGObject, Pango</strong> — Giấy phép GNU LGPLv2.1+ (cung cấp động bởi hệ điều hành Linux).</li>
+          <li><strong>Tesseract OCR &amp; ntfs-3g (gói hệ thống tuỳ chọn)</strong> — Apache-2.0 và GPLv2+, chỉ được gọi dưới dạng lệnh hệ thống ngoài khi người dùng cài đặt.</li>
         </ul>
       </div>
     </div>
