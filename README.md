@@ -6,30 +6,43 @@
   <strong>English</strong> · <a href="docs/README.vi.md">Tiếng Việt</a> · <a href="docs/README.ja.md">日本語</a> · <a href="docs/README.ko.md">한국어</a> · <a href="docs/README.zh.md">简体中文</a> · <a href="docs/README.th.md">ไทย</a> · <a href="docs/README.id.md">Indonesia</a> · <a href="docs/README.de.md">Deutsch</a> · <a href="docs/README.es.md">Español</a> · <a href="docs/README.it.md">Italiano</a> · <a href="docs/README.pt.md">Português</a>
 </p>
 
-# NidoBox — NTFS Read/Write, NidoDrop LAN & Native Desktop Utility Suite (macOS & Windows)
+# NidoBox — NTFS Read/Write, NidoDrop LAN & Native Desktop Utility Suite (macOS, Windows & Linux)
 
 [![Latest Release](https://img.shields.io/github/v/release/stevedat/nidobox-releases?style=flat-square&label=Release&color=10b981)](https://github.com/stevedat/nidobox-releases/releases/latest)
 [![macOS arm64 & x64](https://img.shields.io/badge/macOS_13%2B-arm64_%26_x64-38bdf8?style=flat-square&logo=apple)](https://github.com/stevedat/nidobox-releases/releases/latest)
 [![Windows x64 & ARM64](https://img.shields.io/badge/Windows_10%2F11-x64_%26_ARM64-0078D4?style=flat-square&logo=windows)](https://github.com/stevedat/nidobox-releases/releases/latest)
+[![Linux x86_64 & ARM64](https://img.shields.io/badge/Linux-APT_%7C_deb_%7C_rpm_%7C_arch_%7C_flatpak-f97316?style=flat-square&logo=linux)](https://github.com/stevedat/nidobox-releases/releases/latest)
 [![Website](https://img.shields.io/badge/Website-tools.nido--holdings.com-6366f1?style=flat-square)](https://tools.nido-holdings.com)
 
-**NidoBox** is a fast native desktop utility suite for **macOS 13.0+** (SwiftUI) and **Windows 10/11** (Rust + Tauri 2.0 + WebGPU), built as dedicated single-architecture packages with zero emulation overhead.
+**NidoBox** is a fast native desktop utility suite for **macOS 13.0+** (SwiftUI), **Windows 10/11** (Rust + Tauri 2.0 + WebGPU), and **Linux** (GTK4/Libadwaita + static Rust musl), built as dedicated single-architecture packages with zero emulation overhead.
 
 ## Downloads
 
-| Platform & Silicon | Installer (`v1.4.0`) | Included Capabilities |
+| Platform & Silicon | Installer (`v1.4.1`) | Included Capabilities |
 | :--- | :--- | :--- |
-| **macOS Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Full Mac Suite: NTFS R/W, NidoDrop LAN, Archive, Cleaner, Media, Capture + OCR, Record, Snap, Shelf (`9.7 MB`) |
-| **macOS Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Mac Core Edition: NTFS R/W, S.M.A.R.T. Health, NidoDrop LAN (`9.0 MB`) |
-| **Windows 10/11 x64 (`x86_64`)** · Intel & AMD | [**NidoBox-win-x64.exe**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-win-x64.exe) | Windows x64 Native: Capture Studio (WebGPU + Callouts + OCR), NidoDrop LAN, Batch Image, Archive, Auto-Startup (`2.9 MB`) |
-| **Windows 11 ARM64 (`aarch64`)** · Snapdragon X | [**NidoBox-win-arm64.exe**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-win-arm64.exe) | Windows ARM64 Native (Snapdragon X / Copilot+): Full Windows Suite, zero x64 emulation (`2.6 MB`) |
+| **macOS Apple Silicon (`arm64`)** · M1–M4 | [**NidoBox-mac-arm64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-arm64.dmg) | Full Mac Suite: NTFS R/W, NidoDrop LAN, Archive, Cleaner, Media, Capture + OCR, Record, Snap, Shelf (`10.2 MB`) |
+| **macOS Intel (`x86_64`)** | [**NidoBox-mac-x64.dmg**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-mac-x64.dmg) | Mac Core Edition: NTFS R/W, S.M.A.R.T. Health, NidoDrop LAN (`9.4 MB`) |
+| **Windows 10/11 x64 (`x86_64`)** · Intel & AMD | [**NidoBox-win-x64.exe**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-win-x64.exe) | Windows x64 Native: Capture Studio (WebGPU + Callouts + OCR), NidoDrop LAN, Batch Image, Archive, Auto-Startup (`3.0 MB`) |
+| **Windows 11 ARM64 (`aarch64`)** · Snapdragon X | [**NidoBox-win-arm64.exe**](https://github.com/stevedat/nidobox-releases/releases/latest/download/NidoBox-win-arm64.exe) | Windows ARM64 Native (Snapdragon X / Copilot+): Full Windows Suite, zero x64 emulation (`2.7 MB`) |
+| **Linux x86_64 (`amd64`)** · Debian/Ubuntu/Fedora/Arch | [**.deb**](https://github.com/stevedat/nidobox-releases/releases/latest/download/nidobox_1.4.7_amd64.deb) · [**.rpm**](https://github.com/stevedat/nidobox-releases/releases/latest/download/nidobox-1.4.7-1.x86_64.rpm) · [**.pkg.tar.zst**](https://github.com/stevedat/nidobox-releases/releases/latest/download/nidobox-1.4.7-1-x86_64.pkg.tar.zst) · [**.tar.gz**](https://github.com/stevedat/nidobox-releases/releases/latest/download/nidobox-1.4.7-linux-x86_64.tar.gz) | Linux x86_64 (Debian/Ubuntu, Fedora/openSUSE, Arch, Portable): GTK4 + Static Rust, Capture + Callouts + OCR, NidoDrop LAN, NidoImage, NidoArchive, 1-click NTFS Repair |
+| **Linux ARM64 (`aarch64`)** · Ubuntu-Nido/RPi/ARM | [**.deb**](https://github.com/stevedat/nidobox-releases/releases/latest/download/nidobox_1.4.7_arm64.deb) · [**.rpm**](https://github.com/stevedat/nidobox-releases/releases/latest/download/nidobox-1.4.7-1.aarch64.rpm) · [**.pkg.tar.zst**](https://github.com/stevedat/nidobox-releases/releases/latest/download/nidobox-1.4.7-1-aarch64.pkg.tar.zst) · [**.tar.gz**](https://github.com/stevedat/nidobox-releases/releases/latest/download/nidobox-1.4.7-linux-aarch64.tar.gz) | Linux ARM64 (Apple VM, Raspberry Pi, ARM Laptops): Native aarch64 static Rust + GTK4 suite |
+
+### Linux APT Repository (Debian 12+ / Ubuntu 22.04+ / 24.04+ · `amd64` & `arm64`)
+
+```bash
+sudo install -d -m 0755 /etc/apt/keyrings
+curl -fsSL https://ubuntu-nido-apt.pages.dev/ubuntu-nido.asc | sudo tee /etc/apt/keyrings/ubuntu-nido.asc >/dev/null
+echo "deb [signed-by=/etc/apt/keyrings/ubuntu-nido.asc] https://ubuntu-nido-apt.pages.dev noble main" | sudo tee /etc/apt/sources.list.d/nidobox.list >/dev/null
+sudo apt update && sudo apt install -y nidobox
+```
 
 ## Core Capabilities
 
 - **Kextless NTFS Read/Write (`macOS arm64 & x86_64`):** User-space `NTFS-3G` + `FUSE-T` mount in `/Volumes` without disabling SIP, S.M.A.R.T. health, and sleep/wake safe flush.
-- **High-Speed NidoDrop LAN (`macOS & Windows`):** Local Wi-Fi file and clipboard transfer via QR + 4-digit PIN with `TCP_NODELAY` streaming and resumable Range downloads.
+- **High-Speed NidoDrop LAN (`macOS, Windows & Linux`):** Local Wi-Fi file and clipboard transfer via QR + 4-digit PIN with `TCP_NODELAY` streaming and resumable Range downloads.
 - **Mac Studio Suite (`macOS arm64`):** Archive (`.zip`/`.7z`/`.rar`/`.iso`), Disk Cleaner, Batch Media Converter, Smart Screenshot Markup (Cinema Spotlight, Redact, Curved Callouts, AI Auto-Shield, on-demand OCR), Quick Record Studio (Filmstrip Trimmer, MP4/GIF), Window Snap, and Drop Shelf.
 - **Windows Native Edition (`win-x64 & win-arm64`):** Ultra-light ~3 MB Rust + WebGPU studio with Capture Markup, S-curve Callout notes, Sensitive Auto-Shield, on-demand `Windows.Media.Ocr`, parallel Batch Image converter, Zip-Slip-guarded Archive engine, and silent Tray auto-startup.
+- **Linux Multi-Distro Native (`x86_64 & ARM64`):** Native GTK4/Libadwaita UI + static musl Rust core (`.deb`, `.rpm`, `.pkg.tar.zst`, `.tar.gz`, and Ubuntu-Nido APT) with Portal Capture Studio + UTF-8 vector Callouts, cold default-off Tesseract / NidoAI Agent OCR, NidoDrop LAN, Batch Image, Vietnamese/CJK-safe Archive, and PolicyKit NTFS dirty-bit repair.
 
 ## Interface
 
